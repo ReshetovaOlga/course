@@ -54,11 +54,11 @@ void outputMatrices(matrix *ms, int nMatrices);
 //9 обмен строк с порядковыми
 //номерами i1 и i2 в матрице m
 void swapRows(matrix m, int i1, int i2);
+
+//10 обмен колонок с порядковыми номерами j1 и j2 в матрице m
+void swapColumns(matrix m, int j1, int j2);
 /*
 //
-void swapColumns(matrix m, int j1, int j2);
-
-//10
 void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int));
 
 //11
