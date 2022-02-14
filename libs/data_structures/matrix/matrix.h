@@ -47,13 +47,15 @@ void inputMatrices(matrix *ms, int nMatrices);
 //7  вывод матрицы m
 void outputMatrix(matrix m);
 
-//8
+//8 вывод массива из
+//nMatrices матриц, хранящейся по адресу ms
 void outputMatrices(matrix *ms, int nMatrices);
+
+//9 обмен строк с порядковыми
+//номерами i1 и i2 в матрице m
+void swapRows(matrix m, int i1, int i2);
 /*
 //
-void swapRows(matrix m, int i1, int i2);
-
-//9
 void swapColumns(matrix m, int j1, int j2);
 
 //10
