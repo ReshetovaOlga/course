@@ -57,16 +57,20 @@ void swapRows(matrix m, int i1, int i2);
 
 //10 обмен колонок с порядковыми номерами j1 и j2 в матрице m
 void swapColumns(matrix m, int j1, int j2);
-/*
-//
+
+//11 выполняет сортировку вставками строк
+//матрицы m по неубыванию значения функции criteria применяемой для
+//строк
 void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int));
 
-//11
+//12 выполняет сортировку вставками
+//столбцов матрицы m по неубыванию значения функции criteria применяемой для столбцов
 void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int));
 
-//12
+//возвращает значение ’истина’, если
+//матрица m является квадратной, ложь – в противном случае
 bool isSquareMatrix(matrix m);
-
+/*
 //13
 bool twoMatricesEqual(matrix m1, matrix m2);
 

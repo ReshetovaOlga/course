@@ -25,7 +25,6 @@ void freeMemMatrix(matrix m) {
     free(m.values);
 }
 
-
 void freeMemMatrices(matrix *ms, int nMatrices) {
     for (int i = 0; i < nMatrices; i++)
         freeMemMatrix(*ms);
@@ -68,4 +67,16 @@ void swapColumns(matrix m, int j1, int j2){
         m.values[i][j1] = m.values[i][j2];
         m.values[i][j2] = t;
     }
+}
+
+void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int)){
+
+}
+
+void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int)){
+
+}
+
+bool isSquareMatrix(matrix m){
+    return m.nRows==m.nCols;
 }
