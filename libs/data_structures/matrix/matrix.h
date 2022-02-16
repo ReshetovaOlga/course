@@ -67,35 +67,44 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int))
 //столбцов матрицы m по неубыванию значения функции criteria применяемой для столбцов
 void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int));
 
-//возвращает значение ’истина’, если
+//13возвращает значение ’истина’, если
 //матрица m является квадратной, ложь – в противном случае
 bool isSquareMatrix(matrix m);
-/*
-//13
+
+//14 возвращает значение
+//’истина’, если матрицы m1 и m2 равны, ложь – в противном случае
 bool twoMatricesEqual(matrix m1, matrix m2);
 
-//14
+//15 возвращает значение ’истина’, если матрица
+//m является единичной, ложь – в противном случае
 bool isEMatrix(matrix m);
 
-//15
+//16 возвращает значение ’истина’, если
+//матрица m является симметричной, ложь – в противном случае
 bool isSymmetricMatrix(matrix m);
 
-//16
+void swapElement(int *a, int *b);
+
+//17  транспонирует квадратную
+//матрицу m
 void transposeSquareMatrix(matrix m);
 
-//17
+//18 возвращает позицию минимального элемента матрицы m.
 position getMinValuePos(matrix m);
 
-//18
+//19  возвращает позицию максимального элемента матрицы m.
 position getMaxValuePos(matrix m);
 
-//19
-matrix createMatrixFromArray(const int *a, size_t nRows, size_t nCols);
+//20 возвращает матрицу, размера nRows на nCols,
+// построенного из элементов массива a, размещенную в динамической
+//памяти
+matrix createMatrixFromArray(const int *a, int nRows, int nCols);
 
-//20
-matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices, size_t nRows, size_t nCols);
-
-//21
+//21 возвращает указатель на нулевую матрицу массива из nMatrices матриц, размещенных
+//в динамической памяти, построенных из элементов массива a
+matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows, int nCols);
+/*
+//
 int getMax(int *a, int n);
 
 //22

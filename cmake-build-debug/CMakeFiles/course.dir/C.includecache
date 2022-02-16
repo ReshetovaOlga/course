@@ -6,13 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
-stdbool.h
--
+C:/Users/elen_/CLionProjects/course/main.c
 stdio.h
 -
-
-C:/Users/elen_/CLionProjects/course/main.c
-libs/data_structures/matrix/matrix.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
+malloc.h
+-
 
