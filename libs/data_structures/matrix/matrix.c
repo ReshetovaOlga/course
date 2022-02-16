@@ -174,6 +174,7 @@ position getMinValuePos(matrix m) {
                 posMinElement.rowIndex = i;
                 posMinElement.colIndex = j;
             }
+    return posMinElement;
 }
 
 position getMaxValuePos(matrix m) {
@@ -184,6 +185,7 @@ position getMaxValuePos(matrix m) {
                 posMaxElement.rowIndex = i;
                 posMaxElement.colIndex = j;
             }
+    return posMaxElement;
 }
 
 matrix createMatrixFromArray(const int *a, int nRows, int nCols) {
@@ -204,4 +206,5 @@ matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows
                 ms[k].values[i][j] = values[l++];
     return ms;
 }
+
 

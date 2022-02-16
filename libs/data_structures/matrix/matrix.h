@@ -104,10 +104,14 @@ matrix createMatrixFromArray(const int *a, int nRows, int nCols);
 //в динамической памяти, построенных из элементов массива a
 matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows, int nCols);
 /*
-//
-int getMax(int *a, int n);
+//меняет местами строки,
+//в которых находятся максимальный и минимальный элементы
+void SwapRowsWithMaxiAndMinElements(matrix m);
 
 //22
+int getMax(int *a, int n);
+
+//
 void sortRowsByMinElement(matrix m);
 
 //23
