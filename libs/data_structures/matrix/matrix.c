@@ -56,9 +56,11 @@ void outputMatrices(matrix *ms, int nMatrices) {
 }
 
 void swapRows(matrix m, int i1, int i2) {
-    int *t = m.values[i1];
-    m.values[i1] = m.values[i2];
-    m.values[i2] = t;
+    if (i1 != i2) {
+        int *t = m.values[i1];
+        m.values[i1] = m.values[i2];
+        m.values[i2] = t;
+    }
 }
 
 void swapColumns(matrix m, int j1, int j2) {
@@ -70,7 +72,7 @@ void swapColumns(matrix m, int j1, int j2) {
 }
 
 
-void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int)) {
+void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(const int *, int)) {
     int a[m.nRows];
 
     for (int i = 0; i < m.nRows; i++)
@@ -80,18 +82,18 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int))
         int *t1 = m.values[i];
         int t2 = a[i];
         int j = i;
-        while (j >= 0 && t2 < a[j]) {
-            a[j] = a[j-1];
-            m.values[j-1] = m.values[j];
+        while (j - 1 >= 0 && t2 < a[j - 1]) {
+            a[j] = a[j - 1];
+            m.values[j] = m.values[j - 1];
             j--;
         }
 
-        a[j-1] = t2;
-        m.values[j-1] = t1;
+        a[j] = t2;
+        m.values[j] = t1;
     }
 }
 
-void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int)) {
+void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *, int)) {
     int a[m.nCols];
 
     for (int i = 0; i < m.nCols; i++) {
@@ -104,14 +106,14 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
 
     for (int i = 1; i < m.nCols; i++) {
         int t = a[i];
-        int j = i;
+        int j = i - 1;
         while (j >= 0 && t < a[j]) {
-            a[j] = a[j-1];
-            swapColumns(m, j, j);
+            a[j + 1] = a[j];
+            swapColumns(m, j + 1, j);
             j--;
         }
 
-        a[j] = t;
+        a[j + 1] = t;
     }
 }
 
@@ -121,37 +123,37 @@ bool isSquareMatrix(matrix m) {
 
 bool twoMatricesEqual(matrix m1, matrix m2) {
     if (m1.nRows != m2.nRows || m1.nCols != m2.nCols)
-        return 0;
+        return false;
     else {
         for (int i = 0; i < m1.nRows; i++)
             for (int j = 0; j < m1.nCols; j++)
                 if (m1.values[i][j] != m2.values[i][j])
-                    return 0;
+                    return false;
     }
-    return 1;
+    return true;
 }
 
 bool isEMatrix(matrix m) {
     if (m.nRows != m.nCols)
-        return 0;
+        return false;
     else {
         for (int i = 0; i < m.nRows; i++)
             for (int j = 0; j < m.nCols; j++)
                 if (i == j) {
                     if (m.values[i][j] != 1)
-                        return 0;
+                        return false;
                 } else if (m.values[i][j] != 0)
-                    return 0;
+                    return false;
     }
-    return 1;
+    return true;
 }
 
 bool isSymmetricMatrix(matrix m) {
     for (int i = 0; i < m.nRows; i++)
-        for (int j = 0; j < m.nCols; j++)
+        for (int j = i; j < m.nCols; j++)
             if (m.values[i][j] != m.values[j][i])
-                return 0;
-    return 1;
+                return false;
+    return true;
 }
 
 void swapElement(int *a, int *b) {
@@ -169,7 +171,7 @@ void transposeSquareMatrix(matrix m) {
 position getMinValuePos(matrix m) {
     position posMinElement = (position) {0, 0};
     for (int i = 0; i < m.nRows; i++)
-        for (int j = 0; j < m.nRows; j++)
+        for (int j = 0; j < m.nCols; j++)
             if (m.values[i][j] < m.values[posMinElement.rowIndex][posMinElement.colIndex]) {
                 posMinElement.rowIndex = i;
                 posMinElement.colIndex = j;
@@ -180,11 +182,12 @@ position getMinValuePos(matrix m) {
 position getMaxValuePos(matrix m) {
     position posMaxElement = (position) {0, 0};
     for (int i = 0; i < m.nRows; i++)
-        for (int j = 0; j < m.nRows; j++)
+        for (int j = 0; j < m.nCols; j++) {
             if (m.values[i][j] > m.values[posMaxElement.rowIndex][posMaxElement.colIndex]) {
                 posMaxElement.rowIndex = i;
                 posMaxElement.colIndex = j;
             }
+        }
     return posMaxElement;
 }
 
@@ -207,4 +210,18 @@ matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows
     return ms;
 }
 
-
+int countZeroRows(matrix m) {
+    int totalZeroRows = 0;
+    for (int i = 0; i < m.nRows; i++) {
+        int elementDoNotZero = 1;
+        int j = 0;
+        while (j < m.nCols && elementDoNotZero == 1) {
+            if (m.values[i][j] != 0)
+                elementDoNotZero--;
+            j++;
+        }
+        if (elementDoNotZero == 1)
+            totalZeroRows++;
+    }
+    return totalZeroRows;
+}
