@@ -30,15 +30,15 @@ void freeMemMatrices(matrix *ms, int nMatrices) {
         freeMemMatrix(*ms);
 }
 
-void inputMatrix(matrix *m) {
-    for (int i = 0; i < m->nRows; i++)
-        for (int j = 0; j < m->nCols; j++)
-            scanf("%d", &m->values[i][j]);
+void inputMatrix(matrix m) {
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            scanf("%d", &m.values[i][j]);
 }
 
 void inputMatrices(matrix *ms, int nMatrices) {
     for (int i = 0; i < nMatrices; i++)
-        inputMatrix(&ms[i]);
+        inputMatrix(ms[i]);
 }
 
 void outputMatrix(matrix m) {
@@ -73,48 +73,75 @@ void swapColumns(matrix m, int j1, int j2) {
 
 
 void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(const int *, int)) {
-    int a[m.nRows];
+    int *criteriaArray = (int *) malloc(sizeof(int) * m.nRows);
 
     for (int i = 0; i < m.nRows; i++)
-        a[i] = criteria(m.values[i], m.nCols);
+        criteriaArray[i] = criteria(m.values[i], m.nCols);
 
-    for (int i = 1; i < m.nRows; i++) {
+    for (int i = 0; i < m.nRows; i++) {
         int *t1 = m.values[i];
-        int t2 = a[i];
+        int t2 = criteriaArray[i];
         int j = i;
-        while (j - 1 >= 0 && t2 < a[j - 1]) {
-            a[j] = a[j - 1];
+        while (j - 1 >= 0 && t2 < criteriaArray[j - 1]) {
+            criteriaArray[j] = criteriaArray[j - 1];
             m.values[j] = m.values[j - 1];
             j--;
         }
 
-        a[j] = t2;
+        criteriaArray[j] = t2;
         m.values[j] = t1;
     }
+
+    free(criteriaArray);
 }
 
 void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *, int)) {
-    int a[m.nCols];
+    int *criteriaArray = (int *) malloc(sizeof(int) * m.nRows);
 
     for (int i = 0; i < m.nCols; i++) {
-        int *b = (int *) malloc(sizeof(int) * m.nRows);
+        int *col = (int *) malloc(sizeof(int) * m.nRows);
         for (int j = 0; j < m.nRows; j++)
-            b[j] = m.values[j][i];
-        a[i] = criteria(b, m.nRows);
-        free(b);
+            col[j] = m.values[j][i];
+        criteriaArray[i] = criteria(col, m.nRows);
+        free(col);
     }
 
     for (int i = 1; i < m.nCols; i++) {
-        int t = a[i];
+        int t = criteriaArray[i];
         int j = i - 1;
-        while (j >= 0 && t < a[j]) {
-            a[j + 1] = a[j];
+        while (j >= 0 && t < criteriaArray[j]) {
+            criteriaArray[j + 1] = criteriaArray[j];
             swapColumns(m, j + 1, j);
             j--;
         }
 
-        a[j + 1] = t;
+        criteriaArray[j + 1] = t;
     }
+
+    free(criteriaArray);
+}
+
+void choiceSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *, int)) {
+    int *criteriaArray = (int *) malloc(sizeof(int) * m.nRows);
+
+    for (int i = 0; i < m.nCols; i++) {
+        int *col = (int *) malloc(sizeof(int) * m.nRows);
+        for (int j = 0; j < m.nRows; j++)
+            col[j] = m.values[j][i];
+        criteriaArray[i] = criteria(col, m.nRows);
+        free(col);
+    }
+
+    for (int i = 0; i < m.nCols-1; i++) {
+        int minPos=i;
+        for (int j=i+1; j<m.nCols; j++)
+            if (criteriaArray[j]<criteriaArray[minPos])
+                minPos=j;
+        swapElement(&criteriaArray[i], &criteriaArray[minPos]);
+        swapColumns(m,i,minPos);
+    }
+
+    free(criteriaArray);
 }
 
 bool isSquareMatrix(matrix m) {
@@ -134,7 +161,7 @@ bool twoMatricesEqual(matrix m1, matrix m2) {
 }
 
 bool isEMatrix(matrix m) {
-    if (m.nRows != m.nCols)
+    if (isSquareMatrix(m)==0)
         return false;
     else {
         for (int i = 0; i < m.nRows; i++)
