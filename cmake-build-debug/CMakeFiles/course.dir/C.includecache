@@ -12,13 +12,13 @@ stdbool.h
 stdio.h
 -
 
-C:/Users/elen_/CLionProjects/course/main.c
-libs/data_structures/matrix/matrix.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
+../matrix/matrix.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
-stdio.h
--
-malloc.h
--
+
+C:/Users/elen_/CLionProjects/course/main.c
+libs/data_structures/matrix_tasks/matrix_tasks.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
 assert.h
 -
 

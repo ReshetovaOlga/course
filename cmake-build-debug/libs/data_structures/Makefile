@@ -177,6 +177,30 @@ matrix/matrix.c.s:
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s
 .PHONY : matrix/matrix.c.s
 
+matrix_tasks/matrix_tasks.obj: matrix_tasks/matrix_tasks.c.obj
+.PHONY : matrix_tasks/matrix_tasks.obj
+
+# target to build an object file
+matrix_tasks/matrix_tasks.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.obj
+.PHONY : matrix_tasks/matrix_tasks.c.obj
+
+matrix_tasks/matrix_tasks.i: matrix_tasks/matrix_tasks.c.i
+.PHONY : matrix_tasks/matrix_tasks.i
+
+# target to preprocess a source file
+matrix_tasks/matrix_tasks.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.i
+.PHONY : matrix_tasks/matrix_tasks.c.i
+
+matrix_tasks/matrix_tasks.s: matrix_tasks/matrix_tasks.c.s
+.PHONY : matrix_tasks/matrix_tasks.s
+
+# target to generate assembly for a file
+matrix_tasks/matrix_tasks.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.s
+.PHONY : matrix_tasks/matrix_tasks.c.s
+
 ordered_array_set/ordered_array_set.obj: ordered_array_set/ordered_array_set.c.obj
 .PHONY : ordered_array_set/ordered_array_set.obj
 
@@ -240,6 +264,9 @@ help:
 	@echo ... matrix/matrix.obj
 	@echo ... matrix/matrix.i
 	@echo ... matrix/matrix.s
+	@echo ... matrix_tasks/matrix_tasks.obj
+	@echo ... matrix_tasks/matrix_tasks.i
+	@echo ... matrix_tasks/matrix_tasks.s
 	@echo ... ordered_array_set/ordered_array_set.obj
 	@echo ... ordered_array_set/ordered_array_set.i
 	@echo ... ordered_array_set/ordered_array_set.s

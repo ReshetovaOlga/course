@@ -65,12 +65,12 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(const int *,
 // применяемой для столбцов
 void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *, int));
 
-//13выполняет сортировку вставками
+//13 выполняет сортировку вставками
 // столбцов матрицы m по неубыванию значения функции criteria
 // применяемой для столбцов
 void choiceSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *, int));
 
-//14возвращает значение ’истина’,
+//14 возвращает значение ’истина’,
 // если матрица m является квадратной, ложь – в противном случае
 bool isSquareMatrix(matrix m);
 
@@ -108,116 +108,3 @@ matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows
 
 //24 считает количество нулевых строк в матрице m
 int countZeroRows(matrix m);
-/*
-//меняет местами строки,
-//в которых находятся максимальный и минимальный элементы
-void SwapRowsWithMaxiAndMinElements(matrix m);
-
-//22
-int getMax(int *a, int n);
-
-//
-void sortRowsByMinElement(matrix m);
-
-//23
-int getMin(int *a, int n);
-
-//24
-void sortColsByMinElement(matrix m);
-
-//25
-matrix mulMatrices(matrix m1, matrix m2);
-
-//26
-void getSquareOfMatrixIfSymmetric(matrix *m);
-
-//27
-bool isUnique(long long *a, int n);
-
-//28
-long long getSum(int *a, int n);
-
-//29
-void transposeIfMatrixHasEqualSumOfRows(matrix m, int nRows, int nCols);
-
-//30
-bool isMutuallyInverseMatrices(matrix m1, matrix m2);
-
-//31
-int max(int a, int b);
-
-//32
-long long findSumOfMaxesOfPseudoDiagonal(matrix m);
-
-//33
-int getMinInArea(matrix m);
-
-//34
-float getDistance(int *a, int n);
-
-//35
-void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int));
-
-//36
-void sortByDistances(matrix m);
-
-//37
-int cmp_long_long(const void *pa, const void *pb);
-
-//38
-int countNUnique(long long *a, int n);
-
-//39
-int countEqClassesByRowsSum(matrix m);
-
-//40
-int getNSpecialElement(matrix m, int nRows, int nCols);
-
-//41
-position getLeftMin(matrix m);
-
-//42
-void swapPenultimateRow(matrix m, int n);
-
-//43
-bool isNonDescendingSorted(int *a, int n);
-
-//44
-bool hasAllNonDescendingRows(matrix m);
-
-//45
-int countNonDescendingRowsMatrices(matrix *ms, int nMatrix);
-
-//46
-int countValues(const int *a, int n, int value);
-
-//47
-int countZeroRows(matrix m);
-
-//48
-void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix);
-
-//49
-int min2(int a, int b);
-
-//50
-int getNSpecialElement2(matrix m);
-
-//51
-double getScalarProduct(int *a, int *b, int n);
-
-//52
-double getVectorLength(int *a, int n);
-
-//53
-double getCosine(int *a, int *b, int n);
-
-//54
-int getVectorIndexWithMaxAngle(matrix m, int *b);
-
-//55
-long long getScalarProductRowAndCol(matrix m, int i, int j);
-
-//56
-long long getSpecialScalarProduct(matrix m, int n);
- */

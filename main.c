@@ -1,6 +1,5 @@
-#include "libs/data_structures/matrix/matrix.h"
-#include <stdio.h>
-#include <malloc.h>
+//#include "libs/data_structures/matrix/matrix.h"
+#include "libs/data_structures/matrix_tasks/matrix_tasks.h"
 #include <assert.h>
 
 void test_countZeroRows_withZeroRows() {
@@ -399,7 +398,7 @@ void test_choiceSortColsMatrixByColCriteria() {
 }
 
 
-void test() {
+void test_lib() {
     test_countZeroRows();
     test_getMaxValuePos();
     test_getMinValuePos();
@@ -413,6 +412,46 @@ void test() {
     test_choiceSortColsMatrixByColCriteria();
 }
 
+
+void test_swapRowsWithMaxAndMinElement() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 3,
+                    4, 5, 6,
+                    7, 8, 9,
+
+            },
+            3, 3
+    );
+
+    matrix m2 = createMatrixFromArray(
+            (int[]) {
+                    7, 8, 9,
+                    4, 5, 6,
+                    1, 2, 3,
+
+            },
+            3, 3
+    );
+
+    swapRowsWithMaxAndMinElement(m1);
+
+    assert(twoMatricesEqual(m1, m2) == 1);
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+
+
+void test_tasks(){
+    test_swapRowsWithMaxAndMinElement();
+}
+
+void test(){
+    test_lib();
+    test_tasks();
+}
 
 int main() {
     test();
