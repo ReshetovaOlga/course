@@ -18,4 +18,11 @@ int getMax(const int *array, int arraySize);
 // по неубыванию наибольших элементов строк
 void sortRowsByMaxElement(matrix m);
 
+// поиск минимального элемента массива а размера n
+int getMin(const int *a, int n);
+
+// упорядочивает столбцы матрицы m
+// по неубыванию наименьших элементов строк
+void sortColsByMinElement(matrix m);
+
 #endif //COURSE_MATRIX_TASKS_H
