@@ -398,6 +398,7 @@ void test_choiceSortColsMatrixByColCriteria() {
 }
 
 
+
 void test_lib() {
     test_countZeroRows();
     test_getMaxValuePos();
@@ -442,10 +443,38 @@ void test_swapRowsWithMaxAndMinElement() {
     freeMemMatrix(m2);
 }
 
+void test_sortRowsByMaxElement() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    0, 2, 0,
+                    3, 1, 1,
+                    0, 0, 1,
 
+            },
+            3, 3
+    );
+
+    matrix m2 = createMatrixFromArray(
+            (int[]) {
+                    0, 0, 1,
+                    0, 2, 0,
+                    3, 1, 1,
+
+            },
+            3, 3
+    );
+
+    sortRowsByMaxElement(m1);
+
+    assert(twoMatricesEqual(m1, m2) == 1);
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
 
 void test_tasks(){
     test_swapRowsWithMaxAndMinElement();
+    test_sortRowsByMaxElement();
 }
 
 void test(){

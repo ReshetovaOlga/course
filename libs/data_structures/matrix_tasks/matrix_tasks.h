@@ -11,4 +11,11 @@
 // в которых находятся максимальный и минимальный элементы
 void swapRowsWithMaxAndMinElement(matrix m);
 
+// поиск максимального элемента массива а размера n
+int getMax(const int *array, int arraySize);
+
+// упорядочивает строки матрицы m
+// по неубыванию наибольших элементов строк
+void sortRowsByMaxElement(matrix m);
+
 #endif //COURSE_MATRIX_TASKS_H

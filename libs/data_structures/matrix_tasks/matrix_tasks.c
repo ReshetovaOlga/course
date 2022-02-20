@@ -14,3 +14,18 @@ void swapRowsWithMaxAndMinElement(matrix m){
     position maxPos = getMaxValuePos(m);
     swapRows(m, minPos.rowIndex, maxPos.rowIndex);
 }
+
+int getMax(const int *array, int arraySize){
+    int maxElementIndex = 0;
+    for (int i = 0; i < arraySize; i++)
+        if (array[i]>array[maxElementIndex])
+            maxElementIndex=i;
+    return array[maxElementIndex];
+}
+
+// 2
+// Упорядочить строки матрицы
+// по неубыванию наибольших элементов строк.
+void sortRowsByMaxElement(matrix m){
+    insertionSortRowsMatrixByRowCriteria(m, getMax);
+}
