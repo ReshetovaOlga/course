@@ -25,4 +25,11 @@ int getMin(const int *a, int n);
 // по неубыванию наименьших элементов строк
 void sortColsByMinElement(matrix m);
 
+// умножает матрицу m1 на матрицу m2
+matrix mulMatrices(matrix m1, matrix m2);
+
+// возводит матрицу m в квадрат, если та симметрична
+void getSquareOfMatrixIfSymmetric(matrix *m);
+
+
 #endif //COURSE_MATRIX_TASKS_H

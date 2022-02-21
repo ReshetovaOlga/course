@@ -96,7 +96,7 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(const int *,
 }
 
 void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *, int)) {
-    int *criteriaArray = (int *) malloc(sizeof(int) * m.nRows);
+    int *criteriaArray = (int *) malloc(sizeof(int) * m.nCols);
 
     for (int i = 0; i < m.nCols; i++) {
         int *col = (int *) malloc(sizeof(int) * m.nRows);
@@ -122,7 +122,7 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *,
 }
 
 void choiceSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *, int)) {
-    int *criteriaArray = (int *) malloc(sizeof(int) * m.nRows);
+    int *criteriaArray = (int *) malloc(sizeof(int) * m.nCols);
 
     for (int i = 0; i < m.nCols; i++) {
         int *col = (int *) malloc(sizeof(int) * m.nRows);

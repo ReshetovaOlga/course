@@ -500,10 +500,40 @@ void test_sortColsByMinElement() {
     freeMemMatrix(m2);
 }
 
+void test_getSquareOfMatrixIfSymmetric() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    3, 5, 2,
+                    2, 5, 1,
+                    6, 0, 4,
+
+            },
+            3, 3
+    );
+
+    matrix m2 = createMatrixFromArray(
+            (int[]) {
+                    31, 40, 19,
+                    22, 35, 13,
+                    42, 30, 28,
+
+            },
+            3, 3
+    );
+
+    getSquareOfMatrixIfSymmetric(&m1);
+
+    assert(twoMatricesEqual(m1, m2) == 1);
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
 void test_tasks() {
     test_swapRowsWithMaxAndMinElement();
     test_sortRowsByMaxElement();
     test_sortColsByMinElement();
+    test_getSquareOfMatrixIfSymmetric();
 }
 
 void test() {
@@ -513,7 +543,6 @@ void test() {
 
 int main() {
     test();
-
 
     return 0;
 }

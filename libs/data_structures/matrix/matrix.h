@@ -9,6 +9,7 @@
 
 #include <stdbool.h>
 #include <stdio.h>
+#include "../../algorithms/array/array.h"
 
 typedef struct matrix {
     int **values;// элементы матрицы

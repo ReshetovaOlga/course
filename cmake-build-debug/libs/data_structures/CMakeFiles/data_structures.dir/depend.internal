@@ -5,9 +5,11 @@ libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj
  C:/Users/elen_/CLionProjects/course/libs/data_structures/bitset/bitset.c
  C:/Users/elen_/CLionProjects/course/libs/data_structures/bitset/bitset.h
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
+ C:/Users/elen_/CLionProjects/course/libs/algorithms/array/array.h
  C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.c
  C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
 libs/data_structures/CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.obj
+ C:/Users/elen_/CLionProjects/course/libs/algorithms/array/array.h
  C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
  C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.c
  C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
