@@ -10,12 +10,6 @@ C:/Users/elen_/CLionProjects/course/libs/algorithms/array/array.h
 stdio.h
 -
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.c
-matrix.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
-malloc.h
--
-
 C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
 stdbool.h
 -
@@ -23,4 +17,16 @@ stdio.h
 -
 ../../algorithms/array/array.h
 C:/Users/elen_/CLionProjects/course/libs/algorithms/array/array.h
+
+C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.c
+matrix_tasks.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
+assert.h
+-
+malloc.h
+-
+
+C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
+../matrix/matrix.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
 

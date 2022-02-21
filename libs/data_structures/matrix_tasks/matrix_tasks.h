@@ -31,5 +31,15 @@ matrix mulMatrices(matrix m1, matrix m2);
 // возводит матрицу m в квадрат, если та симметрична
 void getSquareOfMatrixIfSymmetric(matrix *m);
 
+// возвращает сумму элементов массива а размера n
+int getSum(const int *a, int n);
+
+// возвращает 1
+// если элементы массива а размера n не равны, иначе 0
+bool isUnique(const int *a, int n);
+
+//транспонирует матрицу, если среди сумм элементов строк матрицы нет равных
+void transposeIfMatrixHasNotEqualSumOfRows(matrix m);
+
 
 #endif //COURSE_MATRIX_TASKS_H

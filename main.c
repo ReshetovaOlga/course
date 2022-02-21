@@ -529,11 +529,76 @@ void test_getSquareOfMatrixIfSymmetric() {
     freeMemMatrix(m2);
 }
 
+
+void test_transposeIfMatrixHasNotEqualSumOfRows_notEqual() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    1, 1, 1,
+                    2, 2, 2,
+                    3, 3, 3,
+
+            },
+            3, 3
+    );
+
+    matrix m2 = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 3,
+                    1, 2, 3,
+                    1, 2, 3,
+
+            },
+            3, 3
+    );
+
+    transposeIfMatrixHasNotEqualSumOfRows(m1);
+
+    assert(twoMatricesEqual(m1, m2) == 1);
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+void test_transposeIfMatrixHasNotEqualSumOfRows_equal() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    1, 1, 1,
+                    1, 1, 1,
+                    3, 3, 3,
+
+            },
+            3, 3
+    );
+
+    matrix m2 = createMatrixFromArray(
+            (int[]) {
+                    1, 1, 1,
+                    1, 1, 1,
+                    3, 3, 3,
+
+            },
+            3, 3
+    );
+
+    transposeIfMatrixHasNotEqualSumOfRows(m1);
+
+    assert(twoMatricesEqual(m1, m2) == 1);
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
+void test_transposeIfMatrixHasNotEqualSumOfRows(){
+    test_transposeIfMatrixHasNotEqualSumOfRows_equal();
+    test_transposeIfMatrixHasNotEqualSumOfRows_notEqual();
+}
+
 void test_tasks() {
     test_swapRowsWithMaxAndMinElement();
     test_sortRowsByMaxElement();
     test_sortColsByMinElement();
     test_getSquareOfMatrixIfSymmetric();
+    test_transposeIfMatrixHasNotEqualSumOfRows();
 }
 
 void test() {
