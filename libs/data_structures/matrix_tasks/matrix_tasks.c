@@ -75,29 +75,39 @@ matrix mulMatrices(matrix m1, matrix m2) {
 // Дана квадратная матрица.
 // Если среди сумм элементов строк матрицы нет равных,
 // то транспонировать матрицу.
-void transposeIfMatrixHasNotEqualSumOfRows(matrix m){
-    assert(isSquareMatrix(m)==1);
+void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
+    assert(isSquareMatrix(m) == 1);
 
     int *arrayOfSum = (int *) malloc(sizeof(int) * m.nCols);
 
-    for(int i=0; i<m.nRows; i++)
-        arrayOfSum[i]= getSum(m.values[i],m.nCols);
-    if (isUnique(arrayOfSum, m.nCols)==1)
+    for (int i = 0; i < m.nRows; i++)
+        arrayOfSum[i] = getSum(m.values[i], m.nCols);
+    if (isUnique(arrayOfSum, m.nCols) == 1)
         transposeSquareMatrix(m);
     free(arrayOfSum);
 }
 
-int getSum(const int *a, int n){
-    int sum=0;
-    for (int i=0; i<n; i++)
-        sum+=a[i];
+int getSum(const int *a, int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+        sum += a[i];
     return sum;
 }
 
-bool isUnique(const int *a, int n){
-    for (int i=0; i<n; i++)
-        for(int j=i+1; j<n; j++)
-            if (a[i]==a[j])
+bool isUnique(const int *a, int n) {
+    for (int i = 0; i < n; i++)
+        for (int j = i + 1; j < n; j++)
+            if (a[i] == a[j])
                 return 0;
     return 1;
+}
+
+// 6
+// Даны две квадратные матрицы 𝐴 и 𝐵.
+// Определить, являются ли они взаимно обратными (𝐴 = 𝐵^−1).
+bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
+    if (isEMatrix(mulMatrices(m1, m2)) == 1)
+        return true;
+    else
+        return false;
 }
