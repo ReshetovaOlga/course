@@ -301,3 +301,46 @@ void swapPenultimateRow(matrix m){
 
     free(colArray);
 }
+
+// 13
+// Дан массив матриц одного размера.
+// Определить число матриц,
+// строки которых упорядочены по неубыванию элементов
+// (подходящие матрицы выделены зеленым)
+bool isNonDescendingSorted(const int *a, int n) {
+    for (int i = 1; i < n; i++)
+        if (a[i - 1] > a[i])
+            return false;
+
+    return true;
+}
+
+bool hasAllNonDescendingRows(matrix m) {
+    for (int i = 0; i < m.nRows; i++)
+        if (isNonDescendingSorted(m.values[i], m.nCols)==0)
+            return false;
+
+    return true;
+}
+
+int countNonDescendingRowsMatrices(matrix *ms, int n) {
+    int totalMatrices = 0;
+    for (int i = 0; i < n; i++)
+        if (hasAllNonDescendingRows(ms[i]))
+            totalMatrices++;
+
+    return totalMatrices;
+}
+
+// 14
+// Дан массив целочисленных матриц.
+// Вывести матрицы, имеющие наибольшее
+// число нулевых строк
+
+
+
+// 15
+// Дан массив вещественных квадратных матриц.
+// Вывести матрицы с наименьшей нормой.
+// В качестве нормы матрицы взять
+// максимум абсолютных величин ее элементов.

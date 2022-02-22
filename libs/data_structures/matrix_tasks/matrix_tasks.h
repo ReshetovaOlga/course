@@ -86,4 +86,19 @@ position getLeftMin(matrix m);
 // заменяет предпоследнюю строку нужным столбцом
 void swapPenultimateRow(matrix m);
 
+// если массив а размера n упорядочен по неубыванию,
+// возвращвет 1, иначе 0
+bool isNonDescendingSorted(const int *a, int n);
+
+// если все строки матрицы m упорядочены по неубыванию,
+// возвращвет 1, иначе 0
+bool hasAllNonDescendingRows(matrix m);
+
+// возвращает число матриц в массиве ms размера nMatrix,
+// строки которых упорядочены по неубыванию элементов
+int countNonDescendingRowsMatrices(matrix *ms, int nMatrix);
+
+
+
+
 #endif //COURSE_MATRIX_TASKS_H
