@@ -102,4 +102,11 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix);
 // с максимальным количеством нулевых строк
 void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix);
 
+// возвращает максимальный по модулю элемент матрицы m
+int maxElementInMatrixAboutModule(matrix m);
+
+// выводит матрицы из массива матриц ms размера nMatrix
+// с минимальным максимальным модулем элемента
+void printMatrixWithMinMaxElementInMatrixAboutModuleInArray(matrix *ms, int nMatrix);
+
 #endif //COURSE_MATRIX_TASKS_H

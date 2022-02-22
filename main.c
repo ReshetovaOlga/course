@@ -803,24 +803,23 @@ void test() {
 
 int main() {
     test();
+    matrix *ms = createArrayOfMatrixFromArray(
+            (int[]) {
+                    7, 1,
+                    1, 1,
 
-        matrix *ms = createArrayOfMatrixFromArray(
-                (int[]) {
-                        0,0,
-                        1, 1,
+                    1, -5,
+                    2, 2,
 
-                        0,0,
-                        0,1,
+                    5, 4,
+                    2, 3,
 
-                        0,1,
-                        1,0,
+                    1, 3,
+                    7, 9,
+            }, 4, 2, 2
+    );
 
-                        1, 3,
-                        7, 9,
-                }, 4, 2, 2
-        );
-
-    printMatrixWithMaxZeroRows(ms, 4);
+    printMatrixWithMinMaxElementInMatrixAboutModuleInArray(ms,4);
 
 
     return 0;

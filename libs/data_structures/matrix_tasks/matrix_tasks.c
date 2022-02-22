@@ -276,28 +276,28 @@ int getNSpecialElement(matrix m) {
 // Дана квадратная матрица.
 // Заменить предпоследнюю строку матрицы первым из столбцов,
 // в котором находится минимальный элемент матрицы.
-position getLeftMin(matrix m){
-    position minPos = (position){0,0};
+position getLeftMin(matrix m) {
+    position minPos = (position) {0, 0};
 
-    for (int i=0; i<m.nRows; i++)
-        for (int j=0; j<m.nCols; j++)
-            if(m.values[i][j]<m.values[minPos.rowIndex][minPos.colIndex] ||
-                    m.values[i][j]==m.values[minPos.rowIndex][minPos.colIndex] &&
-                    j<minPos.colIndex){
-                minPos.rowIndex=i;
-                minPos.colIndex=j;
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            if (m.values[i][j] < m.values[minPos.rowIndex][minPos.colIndex] ||
+                m.values[i][j] == m.values[minPos.rowIndex][minPos.colIndex] &&
+                j < minPos.colIndex) {
+                minPos.rowIndex = i;
+                minPos.colIndex = j;
             }
 
     return minPos;
 }
 
-void swapPenultimateRow(matrix m){
+void swapPenultimateRow(matrix m) {
     int colIndex = getLeftMin(m).colIndex;
     int *colArray = (int *) malloc(sizeof(int) * m.nRows);
 
     for (int i = 0; i < m.nRows; i++)
         colArray[i] = m.values[i][colIndex];
-    m.values[m.nRows-2]=colArray;
+    m.values[m.nRows - 2] = colArray;
 
     free(colArray);
 }
@@ -317,7 +317,7 @@ bool isNonDescendingSorted(const int *a, int n) {
 
 bool hasAllNonDescendingRows(matrix m) {
     for (int i = 0; i < m.nRows; i++)
-        if (isNonDescendingSorted(m.values[i], m.nCols)==0)
+        if (isNonDescendingSorted(m.values[i], m.nCols) == 0)
             return false;
 
     return true;
@@ -359,3 +359,34 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
 // Вывести матрицы с наименьшей нормой.
 // В качестве нормы матрицы взять
 // максимум абсолютных величин ее элементов.
+int maxElementInMatrixAboutModule(matrix m) {
+    int maxElementAboutModule = 0;
+    for (int i = 0; i < m.nRows; i++)
+        for (int j = 0; j < m.nCols; j++)
+            maxElementAboutModule = max(maxElementAboutModule, abs(m.values[i][j]));
+
+    return maxElementAboutModule;
+}
+
+int min(int a, int b){
+    return a<b?a:b;
+}
+
+void printMatrixWithMinMaxElementInMatrixAboutModuleInArray(matrix *ms, int nMatrix) {
+    int *arrayOfModule = (int *) malloc(sizeof(int) * nMatrix);
+
+    int minModuleElement = INT_MAX;
+    for (int i = 0; i < nMatrix; i++) {
+        int maxModuleElement =maxElementInMatrixAboutModule(ms[i]);
+        arrayOfModule[i] = maxModuleElement;
+        minModuleElement = min(minModuleElement,
+                                  maxModuleElement);
+    }
+
+    for (int i = 0; i < nMatrix; i++) {
+        if (arrayOfModule[i] == minModuleElement)
+            outputMatrix(ms[i]);
+    }
+
+    free(arrayOfModule);
+}
