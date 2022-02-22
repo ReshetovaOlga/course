@@ -725,6 +725,36 @@ void test_getNSpecialElement() {
 
 };
 
+
+void test_swapPenultimateRow() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 2,
+                    2, 2, 2,
+                    3, 3, 3,
+
+            },
+            3, 3
+    );
+
+    matrix m2 = createMatrixFromArray(
+            (int[]) {
+                    1, 2, 2,
+                    1, 2, 3,
+                    3, 3, 3,
+
+            },
+            3, 3
+    );
+
+    swapPenultimateRow(m1);
+
+    assert(twoMatricesEqual(m1, m2) == 1);
+
+    freeMemMatrix(m1);
+    freeMemMatrix(m2);
+}
+
 void test_tasks() {
     test_swapRowsWithMaxAndMinElement();
     test_sortRowsByMaxElement();
@@ -737,6 +767,7 @@ void test_tasks() {
     test_sortByDistances();
     test_countEqClassesByRowsSum();
     test_getNSpecialElement();
+    test_swapPenultimateRow();
 }
 
 void test() {

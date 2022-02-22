@@ -80,5 +80,10 @@ int countEqClassesByRowsSum(matrix m);
 // которые больше суммы других элементов в столбце
 int getNSpecialElement(matrix m);
 
+// находит координаты раннего по столбцам минимума
+position getLeftMin(matrix m);
+
+// заменяет предпоследнюю строку нужным столбцом
+void swapPenultimateRow(matrix m);
 
 #endif //COURSE_MATRIX_TASKS_H

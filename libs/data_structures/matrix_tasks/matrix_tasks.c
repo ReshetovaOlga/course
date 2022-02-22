@@ -261,7 +261,8 @@ int getNSpecialElement(matrix m) {
     for (int i = 0; i < m.nCols; i++) {
         int *colArray = (int *) malloc(sizeof(int) * m.nRows);
 
-        for (int j = 0; j < m.nRows; j++) colArray[j] = m.values[j][i];
+        for (int j = 0; j < m.nRows; j++)
+            colArray[j] = m.values[j][i];
         if (2 * getMax(colArray, m.nRows) - getSum(colArray, m.nRows) > 0)
             nSpecialElement++;
 
@@ -271,3 +272,32 @@ int getNSpecialElement(matrix m) {
     return nSpecialElement;
 }
 
+// 12
+// Дана квадратная матрица.
+// Заменить предпоследнюю строку матрицы первым из столбцов,
+// в котором находится минимальный элемент матрицы.
+position getLeftMin(matrix m){
+    position minPos = (position){0,0};
+
+    for (int i=0; i<m.nRows; i++)
+        for (int j=0; j<m.nCols; j++)
+            if(m.values[i][j]<m.values[minPos.rowIndex][minPos.colIndex] ||
+                    m.values[i][j]==m.values[minPos.rowIndex][minPos.colIndex] &&
+                    j<minPos.colIndex){
+                minPos.rowIndex=i;
+                minPos.colIndex=j;
+            }
+
+    return minPos;
+}
+
+void swapPenultimateRow(matrix m){
+    int colIndex = getLeftMin(m).colIndex;
+    int *colArray = (int *) malloc(sizeof(int) * m.nRows);
+
+    for (int i = 0; i < m.nRows; i++)
+        colArray[i] = m.values[i][colIndex];
+    m.values[m.nRows-2]=colArray;
+
+    free(colArray);
+}
