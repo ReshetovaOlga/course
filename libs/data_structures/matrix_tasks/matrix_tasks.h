@@ -55,4 +55,8 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m);
 // забивает массив а размера n элементом el
 void createAnArray(int *a, int n, int el);
 
+// Находит и возвращает минимальный
+// элемент матрицы m в нужной области области
+int getMinInArea(matrix m);
+
 #endif //COURSE_MATRIX_TASKS_H

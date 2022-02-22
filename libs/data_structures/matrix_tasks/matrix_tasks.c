@@ -144,3 +144,26 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
 
     return getSum(arrayMaxEl, sizeArray);
 }
+
+// 8
+// Дана прямоугольная матрица,
+// все элементы которой различны.
+// Найти минимальный элемент матрицы в выделенной области
+int getMinInArea(matrix m){
+    position maxElementPos= getMaxValuePos(m);
+    position minElementPos=maxElementPos;
+    int minBoundary=maxElementPos.colIndex;
+    int maxBoundary=minBoundary;
+    for (int i=maxElementPos.rowIndex-1; i>=0; i--){
+        if (minBoundary>0)
+            minBoundary--;
+        if (maxBoundary<m.nCols-1)
+            maxBoundary++;
+        for (int j=minBoundary; j<=maxBoundary; j++)
+            if (m.values[i][j]<m.values[minElementPos.rowIndex][minElementPos.colIndex]){
+                minElementPos.rowIndex=i;
+                minElementPos.colIndex=j;
+            }
+    }
+    return m.values[minElementPos.rowIndex][minElementPos.colIndex];
+}
