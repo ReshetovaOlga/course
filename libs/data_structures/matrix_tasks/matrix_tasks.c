@@ -111,3 +111,36 @@ bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     else
         return false;
 }
+
+// 7
+// Дана прямоугольная матрица.
+// Назовем псевдодиагональю множество элементов этой матрицы,
+// лежащих на прямой, параллельной прямой,
+// содержащей элементы 𝑎𝑖,𝑖.
+// Найти сумму максимальных элементов всех псевдодиагоналей данной матрицы.
+int max(int a, int b) {
+    return a > b ? a : b;
+}
+
+void createAnArray(int *a, int n, int el) {
+    for (int i = 0; i < n; i++)
+        a[i] = el;
+}
+
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    int sizeArray = m.nCols + m.nRows - 1;
+    int *arrayMaxEl = (int *) malloc(sizeof(int) * (sizeArray));
+    createAnArray(arrayMaxEl, sizeArray, 0);
+
+    int indexArrayMaxEl;
+    for (int i = 0; i < m.nRows; i++) {
+        indexArrayMaxEl = sizeArray / 2 - i - 1;
+        for (int j = 0; j < m.nCols; j++) {
+            if (i != j)
+                arrayMaxEl[indexArrayMaxEl] = max(arrayMaxEl[indexArrayMaxEl], m.values[i][j]);
+            indexArrayMaxEl++;
+        }
+    }
+
+    return getSum(arrayMaxEl, sizeArray);
+}

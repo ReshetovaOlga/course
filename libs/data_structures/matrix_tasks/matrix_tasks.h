@@ -45,6 +45,14 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m);
 // возвращает 1, если матрицы m1 и m2 взаимнообратные, иначе 0
 bool isMutuallyInverseMatrices(matrix m1, matrix m2);
 
+// возвращает максимальный из двух переменных а и b
+int max(int a, int b);
 
+// возвращает сумму максимальных
+// элементов всех псевдодиагоналей матрицы m
+long long findSumOfMaxesOfPseudoDiagonal(matrix m);
+
+// забивает массив а размера n элементом el
+void createAnArray(int *a, int n, int el);
 
 #endif //COURSE_MATRIX_TASKS_H
