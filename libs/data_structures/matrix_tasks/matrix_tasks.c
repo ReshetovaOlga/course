@@ -7,6 +7,7 @@
 #include <malloc.h>
 #include <math.h>
 #include <limits.h>
+#include <stdlib.h>
 
 // 1
 // Дана квадратная матрица,
@@ -135,7 +136,7 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
     createAnArray(arrayMaxEl, sizeArray, INT_MIN);
 
     int indexArrayMaxEl;
-    arrayMaxEl[sizeArray/2-1]=0;
+    arrayMaxEl[sizeArray / 2 - 1] = 0;
     for (int i = 0; i < m.nRows; i++) {
         indexArrayMaxEl = sizeArray / 2 - i - 1;
         for (int j = 0; j < m.nCols; j++) {
@@ -152,20 +153,20 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
 // Дана прямоугольная матрица,
 // все элементы которой различны.
 // Найти минимальный элемент матрицы в выделенной области
-int getMinInArea(matrix m){
-    position maxElementPos= getMaxValuePos(m);
-    position minElementPos=maxElementPos;
-    int minBoundary=maxElementPos.colIndex;
-    int maxBoundary=minBoundary;
-    for (int i=maxElementPos.rowIndex-1; i>=0; i--){
-        if (minBoundary>0)
+int getMinInArea(matrix m) {
+    position maxElementPos = getMaxValuePos(m);
+    position minElementPos = maxElementPos;
+    int minBoundary = maxElementPos.colIndex;
+    int maxBoundary = minBoundary;
+    for (int i = maxElementPos.rowIndex - 1; i >= 0; i--) {
+        if (minBoundary > 0)
             minBoundary--;
-        if (maxBoundary<m.nCols-1)
+        if (maxBoundary < m.nCols - 1)
             maxBoundary++;
-        for (int j=minBoundary; j<=maxBoundary; j++)
-            if (m.values[i][j]<m.values[minElementPos.rowIndex][minElementPos.colIndex]){
-                minElementPos.rowIndex=i;
-                minElementPos.colIndex=j;
+        for (int j = minBoundary; j <= maxBoundary; j++)
+            if (m.values[i][j] < m.values[minElementPos.rowIndex][minElementPos.colIndex]) {
+                minElementPos.rowIndex = i;
+                minElementPos.colIndex = j;
             }
     }
     return m.values[minElementPos.rowIndex][minElementPos.colIndex];
@@ -188,7 +189,7 @@ void sortByDistances(matrix m) {
     for (int i = 0; i < m.nRows; i++)
         arrayWithDistance[i] = getDistance(m.values[i], m.nCols);
 
-    for (int i = 0; i < m.nRows - 1; i++){
+    for (int i = 0; i < m.nRows - 1; i++) {
         int minPos = i;
         for (int j = i + 1; j < m.nRows; j++)
             if (arrayWithDistance[j] < arrayWithDistance[minPos])
@@ -199,3 +200,47 @@ void sortByDistances(matrix m) {
 
     free(arrayWithDistance);
 }
+
+// 10
+// Определить количество классов эквивалентных строк
+// данной прямоугольной матрицы.
+// Строки считать эквивалентными, если равны суммы их элементов.
+
+int cmp_long_long(const void *pa, const void *pb) {
+    long long arg1 = *(long long *) pa;
+    long long arg2 = *(long long *) pb;
+    if (arg1 < arg2)
+        return -1;
+    else if (arg1 > arg2)
+        return 1;
+    else return 0;
+}
+
+int countNUnique(const long long *a, int n) {
+    if (n == 0)
+        return 0;
+    else {
+        long long newElement = a[0];
+        int nUnique = 1;
+        for (int i = 1; i < n; i++)
+            if (a[i] != newElement) {
+                newElement = a[i];
+                nUnique++;
+            }
+
+        return nUnique;
+    }
+}
+
+int countEqClassesByRowsSum(matrix m) {
+    long long *sumArray = (long long *) malloc(sizeof(long long) * m.nRows);
+
+    for (int i = 0; i < m.nRows; i++)
+        sumArray[i] = getSum(m.values[i], m.nCols);
+    qsort(sumArray, m.nRows, sizeof(long long), cmp_long_long);
+    int nUnique = countNUnique(sumArray, m.nRows);
+    free(sumArray);
+
+    return nUnique;
+}
+

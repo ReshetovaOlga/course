@@ -29,6 +29,8 @@ math.h
 -
 limits.h
 -
+stdlib.h
+-
 
 C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
 ../matrix/matrix.h
