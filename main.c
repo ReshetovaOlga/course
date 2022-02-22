@@ -804,6 +804,24 @@ void test() {
 int main() {
     test();
 
+        matrix *ms = createArrayOfMatrixFromArray(
+                (int[]) {
+                        0,0,
+                        1, 1,
+
+                        0,0,
+                        0,1,
+
+                        0,1,
+                        1,0,
+
+                        1, 3,
+                        7, 9,
+                }, 4, 2, 2
+        );
+
+    printMatrixWithMaxZeroRows(ms, 4);
+
 
     return 0;
 }

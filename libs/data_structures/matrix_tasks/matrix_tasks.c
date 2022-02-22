@@ -336,7 +336,22 @@ int countNonDescendingRowsMatrices(matrix *ms, int n) {
 // Дан массив целочисленных матриц.
 // Вывести матрицы, имеющие наибольшее
 // число нулевых строк
+void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
+    int *arrayOfCountZero = (int *) malloc(sizeof(int) * nMatrix);
 
+    int maxCountZero = 0;
+    for (int i = 0; i < nMatrix; i++) {
+        arrayOfCountZero[i] = countZeroRows(ms[i]);
+        maxCountZero = max(maxCountZero, arrayOfCountZero[i]);
+    }
+
+    for (int i = 0; i < nMatrix; i++) {
+        if (arrayOfCountZero[i] == maxCountZero)
+            outputMatrix(ms[i]);
+    }
+
+    free(arrayOfCountZero);
+}
 
 
 // 15
