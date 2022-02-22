@@ -25,6 +25,10 @@ assert.h
 -
 malloc.h
 -
+math.h
+-
+limits.h
+-
 
 C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
 ../matrix/matrix.h

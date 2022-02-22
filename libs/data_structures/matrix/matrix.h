@@ -109,3 +109,5 @@ matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows
 
 //24 считает количество нулевых строк в матрице m
 int countZeroRows(matrix m);
+
+void swapElementDouble(double *a, double *b);

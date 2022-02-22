@@ -5,6 +5,8 @@
 #include "matrix_tasks.h"
 #include <assert.h>
 #include <malloc.h>
+#include <math.h>
+#include <limits.h>
 
 // 1
 // Дана квадратная матрица,
@@ -130,9 +132,10 @@ void createAnArray(int *a, int n, int el) {
 long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
     int sizeArray = m.nCols + m.nRows - 1;
     int *arrayMaxEl = (int *) malloc(sizeof(int) * (sizeArray));
-    createAnArray(arrayMaxEl, sizeArray, 0);
+    createAnArray(arrayMaxEl, sizeArray, INT_MIN);
 
     int indexArrayMaxEl;
+    arrayMaxEl[sizeArray/2-1]=0;
     for (int i = 0; i < m.nRows; i++) {
         indexArrayMaxEl = sizeArray / 2 - i - 1;
         for (int j = 0; j < m.nCols; j++) {
@@ -166,4 +169,33 @@ int getMinInArea(matrix m){
             }
     }
     return m.values[minElementPos.rowIndex][minElementPos.colIndex];
+}
+
+// 9
+// Дано 𝑛 точек в 𝑚-мерном пространстве.
+// Упорядочить точки по неубыванию
+// их расстояний до начала координат.
+double getDistance(const int *a, int n) {
+    double sum = 0;
+    for (int i = 0; i < n; i++)
+        sum += a[i] * a[i];
+    return sqrt(sum);
+}
+
+void sortByDistances(matrix m) {
+    double *arrayWithDistance = (double *) malloc(sizeof(int) * (m.nRows));
+
+    for (int i = 0; i < m.nRows; i++)
+        arrayWithDistance[i] = getDistance(m.values[i], m.nCols);
+
+    for (int i = 0; i < m.nRows - 1; i++){
+        int minPos = i;
+        for (int j = i + 1; j < m.nRows; j++)
+            if (arrayWithDistance[j] < arrayWithDistance[minPos])
+                minPos = j;
+        swapElementDouble(&arrayWithDistance[i], &arrayWithDistance[minPos]);
+        swapRows(m, i, minPos);
+    }
+
+    free(arrayWithDistance);
 }

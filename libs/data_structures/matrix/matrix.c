@@ -189,6 +189,12 @@ void swapElement(int *a, int *b) {
     *b = t;
 }
 
+void swapElementDouble(double *a, double *b) {
+    double t = *a;
+    *a = *b;
+    *b = t;
+}
+
 void transposeSquareMatrix(matrix m) {
     for (int i = 0; i < m.nRows; i++)
         for (int j = i; j < m.nRows; j++)

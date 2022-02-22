@@ -59,4 +59,11 @@ void createAnArray(int *a, int n, int el);
 // элемент матрицы m в нужной области области
 int getMinInArea(matrix m);
 
+// возвращает расстояние
+double getDistance(const int *a, int n);
+
+// упорядочивает точки
+// по неубыванию их расстояний до начала координат
+void sortByDistances(matrix m);
+
 #endif //COURSE_MATRIX_TASKS_H
