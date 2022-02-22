@@ -33,6 +33,7 @@ int getMax(const int *array, int arraySize) {
     for (int i = 0; i < arraySize; i++)
         if (array[i] > array[maxElementIndex])
             maxElementIndex = i;
+
     return array[maxElementIndex];
 }
 
@@ -49,6 +50,7 @@ int getMin(const int *array, int arraySize) {
     for (int i = 0; i < arraySize; i++)
         if (array[i] < array[maxElementIndex])
             maxElementIndex = i;
+
     return array[maxElementIndex];
 }
 
@@ -87,6 +89,7 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
         arrayOfSum[i] = getSum(m.values[i], m.nCols);
     if (isUnique(arrayOfSum, m.nCols) == 1)
         transposeSquareMatrix(m);
+
     free(arrayOfSum);
 }
 
@@ -156,6 +159,7 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
 int getMinInArea(matrix m) {
     position maxElementPos = getMaxValuePos(m);
     position minElementPos = maxElementPos;
+
     int minBoundary = maxElementPos.colIndex;
     int maxBoundary = minBoundary;
     for (int i = maxElementPos.rowIndex - 1; i >= 0; i--) {
@@ -169,6 +173,7 @@ int getMinInArea(matrix m) {
                 minElementPos.colIndex = j;
             }
     }
+
     return m.values[minElementPos.rowIndex][minElementPos.colIndex];
 }
 
@@ -180,6 +185,7 @@ double getDistance(const int *a, int n) {
     double sum = 0;
     for (int i = 0; i < n; i++)
         sum += a[i] * a[i];
+
     return sqrt(sum);
 }
 
@@ -205,15 +211,16 @@ void sortByDistances(matrix m) {
 // Определить количество классов эквивалентных строк
 // данной прямоугольной матрицы.
 // Строки считать эквивалентными, если равны суммы их элементов.
-
 int cmp_long_long(const void *pa, const void *pb) {
     long long arg1 = *(long long *) pa;
     long long arg2 = *(long long *) pb;
+
     if (arg1 < arg2)
         return -1;
     else if (arg1 > arg2)
         return 1;
-    else return 0;
+    else
+        return 0;
 }
 
 int countNUnique(const long long *a, int n) {
@@ -242,5 +249,25 @@ int countEqClassesByRowsSum(matrix m) {
     free(sumArray);
 
     return nUnique;
+}
+
+// 11
+// Дана матрица.
+// Определить 𝑘 – количество "особых" элементов матрицы,
+// считая элемент "особым",
+// если он больше суммы остальных элементов своего столбца.
+int getNSpecialElement(matrix m) {
+    int nSpecialElement = 0;
+    for (int i = 0; i < m.nCols; i++) {
+        int *colArray = (int *) malloc(sizeof(int) * m.nRows);
+
+        for (int j = 0; j < m.nRows; j++) colArray[j] = m.values[j][i];
+        if (2 * getMax(colArray, m.nRows) - getSum(colArray, m.nRows) > 0)
+            nSpecialElement++;
+
+        free(colArray);
+    }
+
+    return nSpecialElement;
 }
 

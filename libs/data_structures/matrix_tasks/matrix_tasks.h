@@ -72,8 +72,13 @@ int cmp_long_long(const void *pa, const void *pb);
 // возвращает количиство впервые встречающихся элементов массива а размера n
 int countNUnique(const long long *a, int n);
 
-//
+// возвращает количество классов эквивалентных строк
+// данной матрицы m
 int countEqClassesByRowsSum(matrix m);
+
+// возвращает количество элементов,
+// которые больше суммы других элементов в столбце
+int getNSpecialElement(matrix m);
 
 
 #endif //COURSE_MATRIX_TASKS_H

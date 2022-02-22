@@ -707,6 +707,24 @@ void test_countEqClassesByRowsSum() {
 
 };
 
+void test_getNSpecialElement() {
+    matrix m1 = createMatrixFromArray(
+            (int[]) {
+                    3, 5, 5, 4,
+                    2, 3, 6, 7,
+                    12, 2, 1, 2,
+
+
+            },
+            3, 4
+    );
+
+    int needRes = 2;
+
+    assert(getNSpecialElement(m1) == needRes);
+
+};
+
 void test_tasks() {
     test_swapRowsWithMaxAndMinElement();
     test_sortRowsByMaxElement();
@@ -718,6 +736,7 @@ void test_tasks() {
     test_getMinInArea();
     test_sortByDistances();
     test_countEqClassesByRowsSum();
+    test_getNSpecialElement();
 }
 
 void test() {
