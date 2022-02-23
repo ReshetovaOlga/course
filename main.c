@@ -772,7 +772,7 @@ void test_countNonDescendingRowsMatrices() {
             }, 4, 2, 2
     );
 
-    int needRez=2;
+    int needRez = 2;
 
     assert(countNonDescendingRowsMatrices(ms, 4) == needRez);
 
@@ -803,7 +803,25 @@ void test() {
 
 int main() {
     test();
-    matrix *ms = createArrayOfMatrixFromArray(
+    matrix *ms1 = createArrayOfMatrixFromArray(
+            (int[]) {
+                    0, 0,
+                    1, 1,
+
+                    0, 0,
+                    0, 1,
+
+                    0, 1,
+                    1, 0,
+
+                    1, 3,
+                    7, 9,
+            }, 4, 2, 2
+    );
+
+    printMatrixWithMaxZeroRows(ms1, 4);
+
+    matrix *ms2 = createArrayOfMatrixFromArray(
             (int[]) {
                     7, 1,
                     1, 1,
@@ -819,8 +837,10 @@ int main() {
             }, 4, 2, 2
     );
 
-    printMatrixWithMinMaxElementInMatrixAboutModuleInArray(ms,4);
+    printMatrixWithMinMaxElementInMatrixAboutModuleInArray(ms2, 4);
 
+    freeMemMatrices(ms2, 4);
+    freeMemMatrices(ms1, 4);
 
     return 0;
 }
