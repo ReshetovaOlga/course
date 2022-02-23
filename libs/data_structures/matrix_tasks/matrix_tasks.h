@@ -66,7 +66,6 @@ double getDistance(const int *a, int n);
 // по неубыванию их расстояний до начала координат
 void sortByDistances(matrix m);
 
-
 int cmp_long_long(const void *pa, const void *pb);
 
 // возвращает количиство впервые встречающихся элементов массива а размера n

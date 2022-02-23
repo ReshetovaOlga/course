@@ -7,21 +7,26 @@
 
 matrix getMemMatrix(int nRows, int nCols) {
     int **values = (int **) malloc(sizeof(int *) * nRows);
+
     for (int i = 0; i < nRows; i++)
         values[i] = (int *) malloc(sizeof(int) * nCols);
+
     return (matrix) {values, nRows, nCols};
 }
 
 matrix *getMemArrayOfMatrices(int nMatrices, int nRows, int nCols) {
     matrix *ms = (matrix *) malloc(sizeof(matrix) * nMatrices);
+
     for (int i = 0; i < nMatrices; i++)
         ms[i] = getMemMatrix(nRows, nCols);
+
     return ms;
 }
 
 void freeMemMatrix(matrix m) {
     for (int i = 0; i < m.nRows; i++)
         free(m.values[i]);
+
     free(m.values);
 }
 
@@ -103,6 +108,7 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *,
         for (int j = 0; j < m.nRows; j++)
             col[j] = m.values[j][i];
         criteriaArray[i] = criteria(col, m.nRows);
+
         free(col);
     }
 
@@ -129,16 +135,17 @@ void choiceSortColsMatrixByColCriteria(matrix m, int (*criteria)(const int *, in
         for (int j = 0; j < m.nRows; j++)
             col[j] = m.values[j][i];
         criteriaArray[i] = criteria(col, m.nRows);
+
         free(col);
     }
 
-    for (int i = 0; i < m.nCols-1; i++) {
-        int minPos=i;
-        for (int j=i+1; j<m.nCols; j++)
-            if (criteriaArray[j]<criteriaArray[minPos])
-                minPos=j;
+    for (int i = 0; i < m.nCols - 1; i++) {
+        int minPos = i;
+        for (int j = i + 1; j < m.nCols; j++)
+            if (criteriaArray[j] < criteriaArray[minPos])
+                minPos = j;
         swapElement(&criteriaArray[i], &criteriaArray[minPos]);
-        swapColumns(m,i,minPos);
+        swapColumns(m, i, minPos);
     }
 
     free(criteriaArray);
@@ -157,11 +164,12 @@ bool twoMatricesEqual(matrix m1, matrix m2) {
                 if (m1.values[i][j] != m2.values[i][j])
                     return false;
     }
+
     return true;
 }
 
 bool isEMatrix(matrix m) {
-    if (isSquareMatrix(m)==0)
+    if (isSquareMatrix(m) == 0)
         return false;
     else {
         for (int i = 0; i < m.nRows; i++)
@@ -172,6 +180,7 @@ bool isEMatrix(matrix m) {
                 } else if (m.values[i][j] != 0)
                     return false;
     }
+
     return true;
 }
 
@@ -180,6 +189,7 @@ bool isSymmetricMatrix(matrix m) {
         for (int j = i; j < m.nCols; j++)
             if (m.values[i][j] != m.values[j][i])
                 return false;
+
     return true;
 }
 
@@ -203,17 +213,20 @@ void transposeSquareMatrix(matrix m) {
 
 position getMinValuePos(matrix m) {
     position posMinElement = (position) {0, 0};
+
     for (int i = 0; i < m.nRows; i++)
         for (int j = 0; j < m.nCols; j++)
             if (m.values[i][j] < m.values[posMinElement.rowIndex][posMinElement.colIndex]) {
                 posMinElement.rowIndex = i;
                 posMinElement.colIndex = j;
             }
+
     return posMinElement;
 }
 
 position getMaxValuePos(matrix m) {
     position posMaxElement = (position) {0, 0};
+
     for (int i = 0; i < m.nRows; i++)
         for (int j = 0; j < m.nCols; j++) {
             if (m.values[i][j] > m.values[posMaxElement.rowIndex][posMaxElement.colIndex]) {
@@ -221,25 +234,30 @@ position getMaxValuePos(matrix m) {
                 posMaxElement.colIndex = j;
             }
         }
+
     return posMaxElement;
 }
 
 matrix createMatrixFromArray(const int *a, int nRows, int nCols) {
     matrix m = getMemMatrix(nRows, nCols);
+
     int k = 0;
     for (int i = 0; i < nRows; i++)
         for (int j = 0; j < nCols; j++)
             m.values[i][j] = a[k++];
+
     return m;
 }
 
 matrix *createArrayOfMatrixFromArray(const int *values, int nMatrices, int nRows, int nCols) {
     matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
+
     int l = 0;
     for (int k = 0; k < nMatrices; k++)
         for (int i = 0; i < nRows; i++)
             for (int j = 0; j < nCols; j++)
                 ms[k].values[i][j] = values[l++];
+
     return ms;
 }
 
@@ -256,5 +274,6 @@ int countZeroRows(matrix m) {
         if (elementDoNotZero == 1)
             totalZeroRows++;
     }
+
     return totalZeroRows;
 }

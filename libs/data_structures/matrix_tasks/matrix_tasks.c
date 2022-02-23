@@ -68,7 +68,6 @@ matrix mulMatrices(matrix m1, matrix m2) {
     for (int i = 0; i < m1.nRows; i++)
         for (int j = 0; j < m2.nCols; j++) {
             m.values[i][j] = 0;
-
             for (int k = 0; k < m1.nCols; k++)
                 m.values[i][j] += m1.values[i][k] * m2.values[k][j];
         }
@@ -97,6 +96,7 @@ int getSum(const int *a, int n) {
     int sum = 0;
     for (int i = 0; i < n; i++)
         sum += a[i];
+
     return sum;
 }
 
@@ -105,6 +105,7 @@ bool isUnique(const int *a, int n) {
         for (int j = i + 1; j < n; j++)
             if (a[i] == a[j])
                 return 0;
+
     return 1;
 }
 
@@ -194,7 +195,6 @@ void sortByDistances(matrix m) {
 
     for (int i = 0; i < m.nRows; i++)
         arrayWithDistance[i] = getDistance(m.values[i], m.nCols);
-
     for (int i = 0; i < m.nRows - 1; i++) {
         int minPos = i;
         for (int j = i + 1; j < m.nRows; j++)
@@ -368,8 +368,8 @@ int maxElementInMatrixAboutModule(matrix m) {
     return maxElementAboutModule;
 }
 
-int min(int a, int b){
-    return a<b?a:b;
+int min(int a, int b) {
+    return a < b ? a : b;
 }
 
 void printMatrixWithMinMaxElementInMatrixAboutModuleInArray(matrix *ms, int nMatrix) {
@@ -377,10 +377,10 @@ void printMatrixWithMinMaxElementInMatrixAboutModuleInArray(matrix *ms, int nMat
 
     int minModuleElement = INT_MAX;
     for (int i = 0; i < nMatrix; i++) {
-        int maxModuleElement =maxElementInMatrixAboutModule(ms[i]);
+        int maxModuleElement = maxElementInMatrixAboutModule(ms[i]);
         arrayOfModule[i] = maxModuleElement;
         minModuleElement = min(minModuleElement,
-                                  maxModuleElement);
+                               maxModuleElement);
     }
 
     for (int i = 0; i < nMatrix; i++) {
