@@ -4,6 +4,10 @@ add_library(data_structures
         ordered_array_set/ordered_array_set.c
         matrix/matrix.c matrix/matrix.h
         matrix_tasks/matrix_tasks.c
-        matrix_tasks/matrix_tasks.h)
+        matrix_tasks/matrix_tasks.h
+        string/string.c
+        string/string.h
+        string/tasks/tasks.c
+        string/tasks/tasks.h)
 
 target_link_libraries(data_structures algorithms)
