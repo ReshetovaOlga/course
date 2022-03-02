@@ -58,8 +58,11 @@ int getMin(const int *array, int arraySize) {
 // Если данная квадратная матрица 𝐴 симметрична,
 // то заменить 𝐴 ее квадратом (𝐴^2)
 void getSquareOfMatrixIfSymmetric(matrix *m) {
-    if (isSquareMatrix(*m) == 1)
-        *m = mulMatrices(*m, *m);
+    if (isSquareMatrix(*m) == 1) {
+        matrix mCopy=mulMatrices(*m, *m);
+        freeMemMatrix(*m);
+        *m=mCopy;
+    }
 }
 
 matrix mulMatrices(matrix m1, matrix m2) {
@@ -113,10 +116,11 @@ bool isUnique(const int *a, int n) {
 // Даны две квадратные матрицы 𝐴 и 𝐵.
 // Определить, являются ли они взаимно обратными (𝐴 = 𝐵^−1).
 bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
-    if (isEMatrix(mulMatrices(m1, m2)) == 1)
-        return true;
-    else
-        return false;
+    matrix mCopy=mulMatrices(m1, m2);
+    bool mCopyIsEMatrix=isEMatrix(mCopy);
+    freeMemMatrix(mCopy);
+
+    return mCopyIsEMatrix;
 }
 
 // 7
@@ -372,7 +376,7 @@ int min(int a, int b) {
     return a < b ? a : b;
 }
 
-void printMatrixWithMinMaxElementInMatrixAboutModuleInArray(matrix *ms, int nMatrix) {
+void printMatrixWithMinMaxAboutModuleInMatrix(matrix *ms, int nMatrix) {
     int *arrayOfModule = (int *) malloc(sizeof(int) * nMatrix);
 
     int minModuleElement = INT_MAX;
