@@ -6,33 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/elen_/CLionProjects/course/libs/algorithms/array/array.h
-stdio.h
--
-
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
-stdbool.h
--
-stdio.h
--
-../../algorithms/array/array.h
-C:/Users/elen_/CLionProjects/course/libs/algorithms/array/array.h
-
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.c
-matrix_tasks.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.c
+string.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
 assert.h
 -
-malloc.h
--
-math.h
--
-limits.h
--
-stdlib.h
+memory.h
 -
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.h
-../matrix/matrix.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix/matrix.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
+stdio.h
+-
+ctype.h
+-
+
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.c
+tasks.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.h
+../string.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
+
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.h
+../../string/tasks/tasks.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.h
 

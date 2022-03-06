@@ -4,5 +4,8 @@
 
 #ifndef COURSE_TASKS_H
 #define COURSE_TASKS_H
+#include "../../string/tasks/tasks.h"
+
+void removeNonLetters ( char * s );
 
 #endif //COURSE_TASKS_H
