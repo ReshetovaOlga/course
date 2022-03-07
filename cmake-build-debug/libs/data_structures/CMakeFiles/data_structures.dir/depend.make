@@ -19,10 +19,10 @@ libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_ar
 libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.obj: \
  ../libs/data_structures/string/string.c \
  ../libs/data_structures/string/string.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/tasks.c.obj: \
+libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj: \
  ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/tasks.c \
- ../libs/data_structures/string/tasks/tasks.h
+ ../libs/data_structures/string/tasks/removeNonLetters.c \
+ ../libs/data_structures/string/tasks/removeNonLetters.h
 libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/unordered_array_set/unordered_array_set.c \

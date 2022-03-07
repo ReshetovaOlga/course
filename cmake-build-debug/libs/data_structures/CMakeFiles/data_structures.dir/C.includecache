@@ -6,27 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.c
-string.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
-assert.h
--
-memory.h
--
-
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
 stdio.h
 -
 ctype.h
 -
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.c
-tasks.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.h
-../string.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.c
+removeNonLetters.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.h
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.h
-../../string/tasks/tasks.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.h
+../../string/string.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
 

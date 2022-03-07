@@ -249,29 +249,29 @@ string/string.c.s:
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.s
 .PHONY : string/string.c.s
 
-string/tasks/tasks.obj: string/tasks/tasks.c.obj
-.PHONY : string/tasks/tasks.obj
+string/tasks/removeNonLetters.obj: string/tasks/removeNonLetters.c.obj
+.PHONY : string/tasks/removeNonLetters.obj
 
 # target to build an object file
-string/tasks/tasks.c.obj:
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/tasks.c.obj
-.PHONY : string/tasks/tasks.c.obj
+string/tasks/removeNonLetters.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj
+.PHONY : string/tasks/removeNonLetters.c.obj
 
-string/tasks/tasks.i: string/tasks/tasks.c.i
-.PHONY : string/tasks/tasks.i
+string/tasks/removeNonLetters.i: string/tasks/removeNonLetters.c.i
+.PHONY : string/tasks/removeNonLetters.i
 
 # target to preprocess a source file
-string/tasks/tasks.c.i:
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/tasks.c.i
-.PHONY : string/tasks/tasks.c.i
+string/tasks/removeNonLetters.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.i
+.PHONY : string/tasks/removeNonLetters.c.i
 
-string/tasks/tasks.s: string/tasks/tasks.c.s
-.PHONY : string/tasks/tasks.s
+string/tasks/removeNonLetters.s: string/tasks/removeNonLetters.c.s
+.PHONY : string/tasks/removeNonLetters.s
 
 # target to generate assembly for a file
-string/tasks/tasks.c.s:
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/tasks.c.s
-.PHONY : string/tasks/tasks.c.s
+string/tasks/removeNonLetters.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.s
+.PHONY : string/tasks/removeNonLetters.c.s
 
 unordered_array_set/unordered_array_set.obj: unordered_array_set/unordered_array_set.c.obj
 .PHONY : unordered_array_set/unordered_array_set.obj
@@ -321,9 +321,9 @@ help:
 	@echo ... string/string.obj
 	@echo ... string/string.i
 	@echo ... string/string.s
-	@echo ... string/tasks/tasks.obj
-	@echo ... string/tasks/tasks.i
-	@echo ... string/tasks/tasks.s
+	@echo ... string/tasks/removeNonLetters.obj
+	@echo ... string/tasks/removeNonLetters.i
+	@echo ... string/tasks/removeNonLetters.s
 	@echo ... unordered_array_set/unordered_array_set.obj
 	@echo ... unordered_array_set/unordered_array_set.i
 	@echo ... unordered_array_set/unordered_array_set.s

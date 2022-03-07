@@ -1,7 +1,11 @@
 #include "libs/data_structures/string/string.h"
+#include "libs/data_structures/string/tasks/removeNonLetters.h"
 #include <stdio.h>
 #include <assert.h>
 #include <stdbool.h>
+
+#define ASSERT_STRING(expected, got) assertString (expected, got, \
+__FILE__, __FUNCTION__, __LINE__)
 
 //тесты функций библиотеки
 void test_findNonSpace_firthElementNonSpace() {
@@ -60,9 +64,9 @@ void test_findNonSpaceReverse_elementBegin() {
     assert(findNonSpaceReverse(str + 49, str) == str + 49);
 }
 
-void test_findNonSpaceReverse(){
-        test_findNonSpaceReverse_findBegin();
-        test_findNonSpaceReverse_elementBegin();
+void test_findNonSpaceReverse() {
+    test_findNonSpaceReverse_findBegin();
+    test_findNonSpaceReverse_elementBegin();
 }
 
 void test_findSpaceReverse() {
@@ -70,51 +74,51 @@ void test_findSpaceReverse() {
     assert(findSpaceReverse(str + 35, str) == str + 31);
 }
 
-void test_strcmp_theRowsAreEqual(){
+void test_strcmp_theRowsAreEqual() {
     char *str1 = "I look good";
     char *str2 = "I look good";
     assert(strcmp_(str1, str2) == 0);
 }
 
-void test_strcmp_theRowsAreNotEqual(){
+void test_strcmp_theRowsAreNotEqual() {
     char *str1 = "I look not good";
     char *str2 = "I look good";
     assert(strcmp_(str1, str2) != 0);
 }
 
-void test_strcmp(){
+void test_strcmp() {
     test_strcmp_theRowsAreEqual();
     test_strcmp_theRowsAreNotEqual();
 }
 
-void test_copy(){
-    char *str1="I thought about it. And then I made my first drawing.";
-    char *str2="I thought about it.";
+void test_copy() {
+    char *str1 = "I thought about it. And then I made my first drawing.";
+    char *str2 = "I thought about it.";
     char str3[20];
-    copy(str1, str1+18, str3);
-    *str3='\0';
+    copy(str1, str1 + 18, str3);
+    *str3 = '\0';
     assert(strcmp_(str3, str2) != 0);
 }
 
-int thisElementIsA(int s){
-    return (s =='a' || s=='A');
+int thisElementIsA(int s) {
+    return (s == 'a' || s == 'A');
 }
 
-void test_copyIf(){
-    char *str1="an Angel flying into the distance";
-    char *str2="aAa";
+void test_copyIf() {
+    char *str1 = "an Angel flying into the distance";
+    char *str2 = "aAa";
     char str3[5];
-    copyIf(str1, str1+32, str3, thisElementIsA);
-    *str3='\0';
+    copyIf(str1, str1 + 32, str3, thisElementIsA);
+    *str3 = '\0';
     assert(strcmp_(str3, str2) != 0);
 }
 
-void test_copyIfReverse(){
-    char *str1="mama A ma";
-    char *str2="aAaa";
+void test_copyIfReverse() {
+    char *str1 = "mama A ma";
+    char *str2 = "aAaa";
     char str3[5];
-    copyIf(str1, str1+8, str3, thisElementIsA);
-    *str3='\0';
+    copyIfReverse(str1 + 8, str1, str3, thisElementIsA);
+    *str3 = '\0';
     assert(strcmp_(str3, str2) != 0);
 }
 
@@ -132,7 +136,31 @@ void test_lib() {
 }
 
 
+void assertString(const char *expected, char *got,
+                  char const *fileName, char const *funcName,
+                  int line) {
+    if (strcmp_(expected, got)) {
+        fprintf(stderr, " File %s\n", fileName);
+        fprintf(stderr, "%s - failed on line %d\n", funcName, line);
+        fprintf(stderr, " Expected : \"%s \"\n", expected);
+        fprintf(stderr, "Got: \"%s\"\n\n", got);
+    } else
+        fprintf(stderr, "%s - OK\n", funcName);
+}
+
+
+void test_removeNonLetters() {
+    char s[] = "an Angel flying into the distance";
+    removeNonLetters(s);
+    ASSERT_STRING ("anAngelflyingintothedistance", s);
+}
+
+void test_tasks(){
+    test_removeNonLetters();
+}
+
 int main() {
-    test_lib();
+//    test_lib();
+    test_tasks();
 
 }

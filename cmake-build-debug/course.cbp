@@ -192,10 +192,10 @@
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h">
 			<Option target="data_structures"/>
 		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.c">
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.c">
 			<Option target="data_structures"/>
 		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/tasks.h">
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.h">
 			<Option target="data_structures"/>
 		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.c">
