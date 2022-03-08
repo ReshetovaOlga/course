@@ -12,6 +12,10 @@ stdio.h
 ctype.h
 -
 
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
+../../string/string.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
+
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 ../../string/string.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
@@ -27,10 +31,14 @@ libs/data_structures/string/tasks/removeNonLetters.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.h
 libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
+libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
 stdio.h
 -
 assert.h
 -
 stdbool.h
+-
+malloc.h
 -
 

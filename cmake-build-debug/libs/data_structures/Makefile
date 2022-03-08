@@ -249,6 +249,30 @@ string/string.c.s:
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.s
 .PHONY : string/string.c.s
 
+string/tasks/firstTheNumbersAreInvertedThenTheLetters.obj: string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj
+.PHONY : string/tasks/firstTheNumbersAreInvertedThenTheLetters.obj
+
+# target to build an object file
+string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj
+.PHONY : string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj
+
+string/tasks/firstTheNumbersAreInvertedThenTheLetters.i: string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.i
+.PHONY : string/tasks/firstTheNumbersAreInvertedThenTheLetters.i
+
+# target to preprocess a source file
+string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.i
+.PHONY : string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.i
+
+string/tasks/firstTheNumbersAreInvertedThenTheLetters.s: string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.s
+.PHONY : string/tasks/firstTheNumbersAreInvertedThenTheLetters.s
+
+# target to generate assembly for a file
+string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.s
+.PHONY : string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.s
+
 string/tasks/removeAdjacentEqualLetters.obj: string/tasks/removeAdjacentEqualLetters.c.obj
 .PHONY : string/tasks/removeAdjacentEqualLetters.obj
 
@@ -345,6 +369,9 @@ help:
 	@echo ... string/string.obj
 	@echo ... string/string.i
 	@echo ... string/string.s
+	@echo ... string/tasks/firstTheNumbersAreInvertedThenTheLetters.obj
+	@echo ... string/tasks/firstTheNumbersAreInvertedThenTheLetters.i
+	@echo ... string/tasks/firstTheNumbersAreInvertedThenTheLetters.s
 	@echo ... string/tasks/removeAdjacentEqualLetters.obj
 	@echo ... string/tasks/removeAdjacentEqualLetters.i
 	@echo ... string/tasks/removeAdjacentEqualLetters.s

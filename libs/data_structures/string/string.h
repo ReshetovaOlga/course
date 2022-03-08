@@ -6,6 +6,7 @@
 #define COURSE_STRING_H
 #include <stdio.h>
 #include <ctype.h>
+#define MAX_STRING_SIZE 100
 
 // определяет, сколько символов имеется
 // от начала строки до первого ноль-символа

@@ -1,9 +1,11 @@
 #include "libs/data_structures/string/string.h"
 #include "libs/data_structures/string/tasks/removeNonLetters.h"
 #include "libs/data_structures/string/tasks/removeAdjacentEqualLetters.h"
+#include "libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h"
 #include <stdio.h>
 #include <assert.h>
 #include <stdbool.h>
+#include <malloc.h>
 
 #define ASSERT_STRING(expected, got) assertString (expected, got, \
 __FILE__, __FUNCTION__, __LINE__)
@@ -162,12 +164,36 @@ void test_removeAdjacentEqualLetters() {
     ASSERT_STRING ("abc", s);
 }
 
-void test_tasks(){
+void test_removeAdjacentEqualLetters_emptyString() {
+    char s[] = "";
+    removeAdjacentEqualLetters(s);
+    ASSERT_STRING ("", s);
+}
+
+
+void test_firstTheNumbersAreInvertedThenTheLetters(){
+    char str[]="a5 4fg5 4f4f5f6";
+    firstTheNumbersAreInvertedThenTheLetters(str);
+    ASSERT_STRING("5a 54fg 6544fff", str);
+}
+
+void test_firstTheNumbersAreInvertedThenTheLetters_emptyString(){
+    char str[]="";
+    firstTheNumbersAreInvertedThenTheLetters(str);
+    ASSERT_STRING("", str);
+}
+
+void test_tasks() {
     test_removeNonLetters();
     test_removeAdjacentEqualLetters();
+    test_removeAdjacentEqualLetters_emptyString();
+    test_firstTheNumbersAreInvertedThenTheLetters();
+    test_firstTheNumbersAreInvertedThenTheLetters_emptyString();
 }
 
 int main() {
-//    test_lib();
+    test_lib();
     test_tasks();
+
+    return 0;
 }
