@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/elen_/CLionProjects/course/libs/data_structures/matrix_tasks/matrix_tasks.c" "C:/Users/elen_/CLionProjects/course/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.obj"
   "C:/Users/elen_/CLionProjects/course/libs/data_structures/ordered_array_set/ordered_array_set.c" "C:/Users/elen_/CLionProjects/course/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj"
   "C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.c" "C:/Users/elen_/CLionProjects/course/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.obj"
+  "C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c" "C:/Users/elen_/CLionProjects/course/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj"
   "C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.c" "C:/Users/elen_/CLionProjects/course/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj"
   "C:/Users/elen_/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.c" "C:/Users/elen_/CLionProjects/course/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj"
   )

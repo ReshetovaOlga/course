@@ -8,6 +8,8 @@ add_library(data_structures
         string/string.c
         string/string.h
         string/tasks/removeNonLetters.c
-        string/tasks/removeNonLetters.h)
+        string/tasks/removeNonLetters.h
+        string/tasks/removeAdjacentEqualLetters.c
+        string/tasks/removeAdjacentEqualLetters.h)
 
 target_link_libraries(data_structures algorithms)

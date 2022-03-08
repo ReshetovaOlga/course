@@ -1,5 +1,6 @@
 #include "libs/data_structures/string/string.h"
 #include "libs/data_structures/string/tasks/removeNonLetters.h"
+#include "libs/data_structures/string/tasks/removeAdjacentEqualLetters.h"
 #include <stdio.h>
 #include <assert.h>
 #include <stdbool.h>
@@ -155,12 +156,18 @@ void test_removeNonLetters() {
     ASSERT_STRING ("anAngelflyingintothedistance", s);
 }
 
+void test_removeAdjacentEqualLetters() {
+    char s[] = "aaabbbccc";
+    removeAdjacentEqualLetters(s);
+    ASSERT_STRING ("abc", s);
+}
+
 void test_tasks(){
     test_removeNonLetters();
+    test_removeAdjacentEqualLetters();
 }
 
 int main() {
 //    test_lib();
     test_tasks();
-
 }

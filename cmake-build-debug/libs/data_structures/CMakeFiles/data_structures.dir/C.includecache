@@ -12,11 +12,11 @@ stdio.h
 ctype.h
 -
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.c
-removeNonLetters.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c
+removeAdjacentEqualLetters.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 ../../string/string.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
 

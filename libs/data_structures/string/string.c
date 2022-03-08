@@ -88,3 +88,8 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
 
     return beginDestination;
 }
+
+char *getEndOfString(char *s) {
+    size_t lengthS = strlen_(s);
+    return s + lengthS;
+}

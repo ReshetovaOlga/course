@@ -3,10 +3,6 @@
 //
 
 #include "removeNonLetters.h"
-char *getEndOfString(char *s) {
-    size_t lengthS = strlen_(s);
-    return s + lengthS;
-}
 
 void removeNonLetters(char *s) {
     char *endSource = getEndOfString(s);

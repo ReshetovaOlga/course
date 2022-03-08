@@ -63,4 +63,6 @@ char* copyIf(char *beginSource, const char *endSource, char *beginDestination, i
 // Функция возвращает значение beginDestination по окончанию работы функции.
 char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int));
 
+char *getEndOfString(char *s);
+
 #endif //COURSE_STRING_H

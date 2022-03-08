@@ -249,6 +249,30 @@ string/string.c.s:
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.s
 .PHONY : string/string.c.s
 
+string/tasks/removeAdjacentEqualLetters.obj: string/tasks/removeAdjacentEqualLetters.c.obj
+.PHONY : string/tasks/removeAdjacentEqualLetters.obj
+
+# target to build an object file
+string/tasks/removeAdjacentEqualLetters.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj
+.PHONY : string/tasks/removeAdjacentEqualLetters.c.obj
+
+string/tasks/removeAdjacentEqualLetters.i: string/tasks/removeAdjacentEqualLetters.c.i
+.PHONY : string/tasks/removeAdjacentEqualLetters.i
+
+# target to preprocess a source file
+string/tasks/removeAdjacentEqualLetters.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.i
+.PHONY : string/tasks/removeAdjacentEqualLetters.c.i
+
+string/tasks/removeAdjacentEqualLetters.s: string/tasks/removeAdjacentEqualLetters.c.s
+.PHONY : string/tasks/removeAdjacentEqualLetters.s
+
+# target to generate assembly for a file
+string/tasks/removeAdjacentEqualLetters.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.s
+.PHONY : string/tasks/removeAdjacentEqualLetters.c.s
+
 string/tasks/removeNonLetters.obj: string/tasks/removeNonLetters.c.obj
 .PHONY : string/tasks/removeNonLetters.obj
 
@@ -321,6 +345,9 @@ help:
 	@echo ... string/string.obj
 	@echo ... string/string.i
 	@echo ... string/string.s
+	@echo ... string/tasks/removeAdjacentEqualLetters.obj
+	@echo ... string/tasks/removeAdjacentEqualLetters.i
+	@echo ... string/tasks/removeAdjacentEqualLetters.s
 	@echo ... string/tasks/removeNonLetters.obj
 	@echo ... string/tasks/removeNonLetters.i
 	@echo ... string/tasks/removeNonLetters.s

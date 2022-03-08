@@ -19,6 +19,10 @@ libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_ar
 libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.obj: \
  ../libs/data_structures/string/string.c \
  ../libs/data_structures/string/string.h
+libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj: \
+ ../libs/data_structures/string/string.h \
+ ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.c \
+ ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj: \
  ../libs/data_structures/string/string.h \
  ../libs/data_structures/string/tasks/removeNonLetters.c \

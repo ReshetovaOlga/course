@@ -192,6 +192,12 @@
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.c">
 			<Option target="data_structures"/>
 		</Unit>

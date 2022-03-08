@@ -19,5 +19,6 @@ CMakeFiles/course.dir/libs/data_structures/unordered_array_set/unordered_array_s
  ../libs/data_structures/unordered_array_set/unordered_array_set.h
 CMakeFiles/course.dir/main.c.obj: \
  ../libs/data_structures/string/string.h \
+ ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \
  ../main.c
