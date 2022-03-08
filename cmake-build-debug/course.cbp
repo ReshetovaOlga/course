@@ -192,6 +192,18 @@
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c">
 			<Option target="data_structures"/>
 		</Unit>

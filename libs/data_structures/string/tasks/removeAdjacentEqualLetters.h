@@ -6,6 +6,7 @@
 #define COURSE_REMOVEADJACENTEQUALLETTERS_H
 #include "../../string/string.h"
 
+
 char *copyIfElementsNitDabble(char *beginSource, const char *endSource, char *beginDestination);
 
 // Преобразовывает строку s,

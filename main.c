@@ -2,6 +2,8 @@
 #include "libs/data_structures/string/tasks/removeNonLetters.h"
 #include "libs/data_structures/string/tasks/removeAdjacentEqualLetters.h"
 #include "libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h"
+#include "libs/data_structures/string/tasks/firstLettersThenNumbers.h"
+#include "libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h"
 #include <stdio.h>
 #include <assert.h>
 #include <stdbool.h>
@@ -183,12 +185,40 @@ void test_firstTheNumbersAreInvertedThenTheLetters_emptyString(){
     ASSERT_STRING("", str);
 }
 
+void test_firstLettersThenNumbers(){
+    char str[]="a5 4fg5 4f4f5f6";
+    firstLettersThenNumbers(str);
+    ASSERT_STRING("a5 fg45 fff4456", str);
+}
+
+void test_firstLettersThenNumbers_emptyString(){
+    char str[]="";
+    firstLettersThenNumbers(str);
+    ASSERT_STRING("", str);
+}
+
+void test_howManyDigitsAreThereSoManySpaces(){
+    char str[]="a1a2a23a";
+    howManyDigitsAreThereSoManySpaces(str);
+    ASSERT_STRING("a a  a     a", str);
+}
+
+void test_howManyDigitsAreThereSoManySpaces_emptyString(){
+    char str[]="";
+    howManyDigitsAreThereSoManySpaces(str);
+    ASSERT_STRING("", str);
+}
+
 void test_tasks() {
     test_removeNonLetters();
     test_removeAdjacentEqualLetters();
     test_removeAdjacentEqualLetters_emptyString();
     test_firstTheNumbersAreInvertedThenTheLetters();
     test_firstTheNumbersAreInvertedThenTheLetters_emptyString();
+    test_firstLettersThenNumbers();
+    test_firstLettersThenNumbers_emptyString();
+    test_howManyDigitsAreThereSoManySpaces();
+    test_howManyDigitsAreThereSoManySpaces_emptyString();
 }
 
 int main() {

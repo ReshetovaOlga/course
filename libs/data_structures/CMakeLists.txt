@@ -10,6 +10,6 @@ add_library(data_structures
         string/tasks/removeNonLetters.c
         string/tasks/removeNonLetters.h
         string/tasks/removeAdjacentEqualLetters.c
-        string/tasks/removeAdjacentEqualLetters.h "string/tasks/firstTheNumbersAreInvertedThenTheLetters.c" "string/tasks/firstTheNumbersAreInvertedThenTheLetters.h")
+        string/tasks/removeAdjacentEqualLetters.h "string/tasks/firstTheNumbersAreInvertedThenTheLetters.c" "string/tasks/firstTheNumbersAreInvertedThenTheLetters.h" string/tasks/firstLettersThenNumbers.c string/tasks/firstLettersThenNumbers.h "string/tasks/ howManyDigitsAreThereSoManySpaces.c" "string/tasks/ howManyDigitsAreThereSoManySpaces.h")
 
 target_link_libraries(data_structures algorithms)

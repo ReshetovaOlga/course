@@ -12,6 +12,16 @@ stdio.h
 ctype.h
 -
 
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h
+../../string/string.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
+malloc.h
+-
+
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.h
+../../string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
+
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
 ../../string/string.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
@@ -33,6 +43,10 @@ libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
+libs/data_structures/string/tasks/firstLettersThenNumbers.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.h
+libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h
 stdio.h
 -
 assert.h

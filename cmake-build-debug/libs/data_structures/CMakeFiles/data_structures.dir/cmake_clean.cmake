@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.obj"
   "CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj"
   "CMakeFiles/data_structures.dir/string/string.c.obj"
+  "CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj"
+  "CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj"
   "CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj"
   "CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj"
   "CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj"

@@ -19,6 +19,15 @@ libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_ar
 libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.obj: \
  ../libs/data_structures/string/string.c \
  ../libs/data_structures/string/string.h
+libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj: \
+ ../libs/data_structures/string/string.h \
+ ../libs/data_structures/string/tasks/\ howManyDigitsAreThereSoManySpaces.c \
+ ../libs/data_structures/string/tasks/\ howManyDigitsAreThereSoManySpaces.h
+libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj: \
+ ../libs/data_structures/string/string.h \
+ ../libs/data_structures/string/tasks/firstLettersThenNumbers.c \
+ ../libs/data_structures/string/tasks/firstLettersThenNumbers.h \
+ ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
 libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj: \
  ../libs/data_structures/string/string.h \
  ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c \

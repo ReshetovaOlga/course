@@ -249,6 +249,54 @@ string/string.c.s:
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.s
 .PHONY : string/string.c.s
 
+string/tasks/_howManyDigitsAreThereSoManySpaces.obj: string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj
+.PHONY : string/tasks/_howManyDigitsAreThereSoManySpaces.obj
+
+# target to build an object file
+string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj
+.PHONY : string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj
+
+string/tasks/_howManyDigitsAreThereSoManySpaces.i: string/tasks/_howManyDigitsAreThereSoManySpaces.c.i
+.PHONY : string/tasks/_howManyDigitsAreThereSoManySpaces.i
+
+# target to preprocess a source file
+string/tasks/_howManyDigitsAreThereSoManySpaces.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.i
+.PHONY : string/tasks/_howManyDigitsAreThereSoManySpaces.c.i
+
+string/tasks/_howManyDigitsAreThereSoManySpaces.s: string/tasks/_howManyDigitsAreThereSoManySpaces.c.s
+.PHONY : string/tasks/_howManyDigitsAreThereSoManySpaces.s
+
+# target to generate assembly for a file
+string/tasks/_howManyDigitsAreThereSoManySpaces.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.s
+.PHONY : string/tasks/_howManyDigitsAreThereSoManySpaces.c.s
+
+string/tasks/firstLettersThenNumbers.obj: string/tasks/firstLettersThenNumbers.c.obj
+.PHONY : string/tasks/firstLettersThenNumbers.obj
+
+# target to build an object file
+string/tasks/firstLettersThenNumbers.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj
+.PHONY : string/tasks/firstLettersThenNumbers.c.obj
+
+string/tasks/firstLettersThenNumbers.i: string/tasks/firstLettersThenNumbers.c.i
+.PHONY : string/tasks/firstLettersThenNumbers.i
+
+# target to preprocess a source file
+string/tasks/firstLettersThenNumbers.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.i
+.PHONY : string/tasks/firstLettersThenNumbers.c.i
+
+string/tasks/firstLettersThenNumbers.s: string/tasks/firstLettersThenNumbers.c.s
+.PHONY : string/tasks/firstLettersThenNumbers.s
+
+# target to generate assembly for a file
+string/tasks/firstLettersThenNumbers.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.s
+.PHONY : string/tasks/firstLettersThenNumbers.c.s
+
 string/tasks/firstTheNumbersAreInvertedThenTheLetters.obj: string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj
 .PHONY : string/tasks/firstTheNumbersAreInvertedThenTheLetters.obj
 
@@ -369,6 +417,12 @@ help:
 	@echo ... string/string.obj
 	@echo ... string/string.i
 	@echo ... string/string.s
+	@echo ... string/tasks/_howManyDigitsAreThereSoManySpaces.obj
+	@echo ... string/tasks/_howManyDigitsAreThereSoManySpaces.i
+	@echo ... string/tasks/_howManyDigitsAreThereSoManySpaces.s
+	@echo ... string/tasks/firstLettersThenNumbers.obj
+	@echo ... string/tasks/firstLettersThenNumbers.i
+	@echo ... string/tasks/firstLettersThenNumbers.s
 	@echo ... string/tasks/firstTheNumbersAreInvertedThenTheLetters.obj
 	@echo ... string/tasks/firstTheNumbersAreInvertedThenTheLetters.i
 	@echo ... string/tasks/firstTheNumbersAreInvertedThenTheLetters.s
