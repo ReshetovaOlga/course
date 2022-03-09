@@ -6,23 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c
+sortAndDifficultyAssessment.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.h
+
+C:/Users/elen_/CLionProjects/course/libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.h
+stdlib.h
+-
 stdio.h
 -
-ctype.h
+stdbool.h
 -
-
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.c
-7theWordsOfTheStringAreInReverseOrder.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.h
-
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.h
-../../string/string.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
-../../string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
-
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
-../../string/string.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
+time.h
+-
 

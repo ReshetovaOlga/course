@@ -143,113 +143,9 @@ libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/string.c.s"
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\elen_\CLionProjects\course\libs\data_structures\string\string.c -o CMakeFiles\data_structures.dir\string\string.c.s
 
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj: ../libs/data_structures/string/tasks/removeNonLetters.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\string\tasks\removeNonLetters.c.obj -c C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\removeNonLetters.c
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.i"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\removeNonLetters.c > CMakeFiles\data_structures.dir\string\tasks\removeNonLetters.c.i
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.s"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\removeNonLetters.c -o CMakeFiles\data_structures.dir\string\tasks\removeNonLetters.c.s
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj: ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\string\tasks\removeAdjacentEqualLetters.c.obj -c C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\removeAdjacentEqualLetters.c
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.i"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\removeAdjacentEqualLetters.c > CMakeFiles\data_structures.dir\string\tasks\removeAdjacentEqualLetters.c.i
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.s"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\removeAdjacentEqualLetters.c -o CMakeFiles\data_structures.dir\string\tasks\removeAdjacentEqualLetters.c.s
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj: ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\string\tasks\firstTheNumbersAreInvertedThenTheLetters.c.obj -c C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\firstTheNumbersAreInvertedThenTheLetters.c
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.i"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\firstTheNumbersAreInvertedThenTheLetters.c > CMakeFiles\data_structures.dir\string\tasks\firstTheNumbersAreInvertedThenTheLetters.c.i
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.s"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\firstTheNumbersAreInvertedThenTheLetters.c -o CMakeFiles\data_structures.dir\string\tasks\firstTheNumbersAreInvertedThenTheLetters.c.s
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj: ../libs/data_structures/string/tasks/firstLettersThenNumbers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\string\tasks\firstLettersThenNumbers.c.obj -c C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\firstLettersThenNumbers.c
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.i"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\firstLettersThenNumbers.c > CMakeFiles\data_structures.dir\string\tasks\firstLettersThenNumbers.c.i
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.s"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\firstLettersThenNumbers.c -o CMakeFiles\data_structures.dir\string\tasks\firstLettersThenNumbers.c.s
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj: ../libs/data_structures/string/tasks/\ howManyDigitsAreThereSoManySpaces.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\string\tasks\_howManyDigitsAreThereSoManySpaces.c.obj -c "C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\ howManyDigitsAreThereSoManySpaces.c"
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.i"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\ howManyDigitsAreThereSoManySpaces.c" > CMakeFiles\data_structures.dir\string\tasks\_howManyDigitsAreThereSoManySpaces.c.i
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.s"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\ howManyDigitsAreThereSoManySpaces.c" -o CMakeFiles\data_structures.dir\string\tasks\_howManyDigitsAreThereSoManySpaces.c.s
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj: ../libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\string\tasks\replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj -c C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\replaceAllOccurrencesOfTheWord1WithTheWord2.c
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.i"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\replaceAllOccurrencesOfTheWord1WithTheWord2.c > CMakeFiles\data_structures.dir\string\tasks\replaceAllOccurrencesOfTheWord1WithTheWord2.c.i
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.s"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\replaceAllOccurrencesOfTheWord1WithTheWord2.c -o CMakeFiles\data_structures.dir\string\tasks\replaceAllOccurrencesOfTheWord1WithTheWord2.c.s
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj: ../libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\string\tasks\6AreTheWordsLexicographicallyOrdered.c.obj -c C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\6AreTheWordsLexicographicallyOrdered.c
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.i"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\6AreTheWordsLexicographicallyOrdered.c > CMakeFiles\data_structures.dir\string\tasks\6AreTheWordsLexicographicallyOrdered.c.i
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.s"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\6AreTheWordsLexicographicallyOrdered.c -o CMakeFiles\data_structures.dir\string\tasks\6AreTheWordsLexicographicallyOrdered.c.s
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj: ../libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\string\tasks\7theWordsOfTheStringAreInReverseOrder.c.obj -c C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\7theWordsOfTheStringAreInReverseOrder.c
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.i"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\7theWordsOfTheStringAreInReverseOrder.c > CMakeFiles\data_structures.dir\string\tasks\7theWordsOfTheStringAreInReverseOrder.c.i
-
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.s"
-	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\elen_\CLionProjects\course\libs\data_structures\string\tasks\7theWordsOfTheStringAreInReverseOrder.c -o CMakeFiles\data_structures.dir\string\tasks\7theWordsOfTheStringAreInReverseOrder.c.s
-
 libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
 libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj: ../libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj"
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\sortAndDifficultyAssessment\sortAndDifficultyAssessment.c.obj -c C:\Users\elen_\CLionProjects\course\libs\data_structures\sortAndDifficultyAssessment\sortAndDifficultyAssessment.c
 
 libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.i: cmake_force
@@ -268,14 +164,6 @@ data_structures_OBJECTS = \
 "CMakeFiles/data_structures.dir/matrix/matrix.c.obj" \
 "CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.obj" \
 "CMakeFiles/data_structures.dir/string/string.c.obj" \
-"CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj" \
-"CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj" \
-"CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj" \
-"CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj" \
-"CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj" \
-"CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj" \
-"CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj" \
-"CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj" \
 "CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj"
 
 # External object files for target data_structures
@@ -287,18 +175,10 @@ libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj
-libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/build.make
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C static library libdata_structures.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\elen_\CLionProjects\course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C static library libdata_structures.a"
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -P CMakeFiles\data_structures.dir\cmake_clean_target.cmake
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\data_structures.dir\link.txt --verbose=$(VERBOSE)
 

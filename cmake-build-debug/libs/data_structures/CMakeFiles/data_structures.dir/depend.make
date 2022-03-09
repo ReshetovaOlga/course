@@ -22,42 +22,6 @@ libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/
 libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.obj: \
  ../libs/data_structures/string/string.c \
  ../libs/data_structures/string/string.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj: \
- ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.c \
- ../libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.h \
- ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj: \
- ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.c \
- ../libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.h \
- ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj: \
- ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/\ howManyDigitsAreThereSoManySpaces.c \
- ../libs/data_structures/string/tasks/\ howManyDigitsAreThereSoManySpaces.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstLettersThenNumbers.c.obj: \
- ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/firstLettersThenNumbers.c \
- ../libs/data_structures/string/tasks/firstLettersThenNumbers.h \
- ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c.obj: \
- ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c \
- ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeAdjacentEqualLetters.c.obj: \
- ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.c \
- ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.obj: \
- ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/removeNonLetters.c \
- ../libs/data_structures/string/tasks/removeNonLetters.h
-libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj: \
- ../libs/data_structures/string/string.h \
- ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h \
- ../libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c \
- ../libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.h
 libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/unordered_array_set/unordered_array_set.c \

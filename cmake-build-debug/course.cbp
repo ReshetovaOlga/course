@@ -198,54 +198,6 @@
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h">
 			<Option target="data_structures"/>
 		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.c">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.c">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.h">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.c">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.h">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.c">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.h">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.c">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.c">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.h">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c">
-			<Option target="data_structures"/>
-		</Unit>
-		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.h">
-			<Option target="data_structures"/>
-		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.c">
 			<Option target="course"/>
 			<Option target="data_structures"/>
