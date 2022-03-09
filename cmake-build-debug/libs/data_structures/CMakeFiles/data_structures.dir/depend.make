@@ -16,9 +16,22 @@ libs/data_structures/CMakeFiles/data_structures.dir/matrix_tasks/matrix_tasks.c.
 libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.obj: \
  ../libs/data_structures/ordered_array_set/ordered_array_set.c \
  ../libs/data_structures/ordered_array_set/ordered_array_set.h
+libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj: \
+ ../libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c \
+ ../libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.h
 libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.obj: \
  ../libs/data_structures/string/string.c \
  ../libs/data_structures/string/string.h
+libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj: \
+ ../libs/data_structures/string/string.h \
+ ../libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.c \
+ ../libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.h \
+ ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
+libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj: \
+ ../libs/data_structures/string/string.h \
+ ../libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.c \
+ ../libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.h \
+ ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
 libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj: \
  ../libs/data_structures/string/string.h \
  ../libs/data_structures/string/tasks/\ howManyDigitsAreThereSoManySpaces.c \
@@ -40,6 +53,11 @@ libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetter
  ../libs/data_structures/string/string.h \
  ../libs/data_structures/string/tasks/removeNonLetters.c \
  ../libs/data_structures/string/tasks/removeNonLetters.h
+libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj: \
+ ../libs/data_structures/string/string.h \
+ ../libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h \
+ ../libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c \
+ ../libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.h
 libs/data_structures/CMakeFiles/data_structures.dir/unordered_array_set/unordered_array_set.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/unordered_array_set/unordered_array_set.c \

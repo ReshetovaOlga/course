@@ -5,9 +5,9 @@
 
 #include "firstLettersThenNumbers.h"
 
-
-int getWordReverse(char *rbegin, char *rend, WordDescriptor *word){
-    word->end = findNonSpaceReverse(rbegin,rend);
+/*
+int getWordReverse(char *rbegin, char *rend, WordDescriptor *word) {
+    word->end = findNonSpaceReverse(rbegin, rend);
     if (*word->end == *rend)
         return 0;
 
@@ -17,7 +17,7 @@ int getWordReverse(char *rbegin, char *rend, WordDescriptor *word){
 }
 
 void letterToStart(WordDescriptor word) {
-    char _stringBuffer[MAX_STRING_SIZE+1];
+    char _stringBuffer[MAX_STRING_SIZE + 1];
     char *endStringBuffer = copy(word.begin, word.end, _stringBuffer);
     char *recPosition = copyIf(_stringBuffer, endStringBuffer, word.begin, isalpha);
     copyIf(_stringBuffer, endStringBuffer, recPosition, isdigit);
@@ -34,4 +34,4 @@ void firstLettersThenNumbers(char *beginString) {
         letterToStart(word);
         beginSearch = word.end;
     }
-}
+}*/

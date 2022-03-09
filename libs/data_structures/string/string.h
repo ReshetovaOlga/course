@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <ctype.h>
 #define MAX_STRING_SIZE 100
+# define MAX_N_WORDS_IN_STRING 100
+# define MAX_WORD_SIZE 20
 
 // определяет, сколько символов имеется
 // от начала строки до первого ноль-символа
@@ -64,6 +66,7 @@ char* copyIf(char *beginSource, const char *endSource, char *beginDestination, i
 // Функция возвращает значение beginDestination по окончанию работы функции.
 char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int));
 
+// находит конец строки
 char *getEndOfString(char *s);
 
 #endif //COURSE_STRING_H

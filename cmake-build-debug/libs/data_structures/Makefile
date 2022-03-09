@@ -225,6 +225,30 @@ ordered_array_set/ordered_array_set.c.s:
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_array_set.c.s
 .PHONY : ordered_array_set/ordered_array_set.c.s
 
+sortAndDifficultyAssessment/sortAndDifficultyAssessment.obj: sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj
+.PHONY : sortAndDifficultyAssessment/sortAndDifficultyAssessment.obj
+
+# target to build an object file
+sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj
+.PHONY : sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj
+
+sortAndDifficultyAssessment/sortAndDifficultyAssessment.i: sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.i
+.PHONY : sortAndDifficultyAssessment/sortAndDifficultyAssessment.i
+
+# target to preprocess a source file
+sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.i
+.PHONY : sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.i
+
+sortAndDifficultyAssessment/sortAndDifficultyAssessment.s: sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.s
+.PHONY : sortAndDifficultyAssessment/sortAndDifficultyAssessment.s
+
+# target to generate assembly for a file
+sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.s
+.PHONY : sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.s
+
 string/string.obj: string/string.c.obj
 .PHONY : string/string.obj
 
@@ -248,6 +272,54 @@ string/string.s: string/string.c.s
 string/string.c.s:
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.s
 .PHONY : string/string.c.s
+
+string/tasks/6AreTheWordsLexicographicallyOrdered.obj: string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj
+.PHONY : string/tasks/6AreTheWordsLexicographicallyOrdered.obj
+
+# target to build an object file
+string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj
+.PHONY : string/tasks/6AreTheWordsLexicographicallyOrdered.c.obj
+
+string/tasks/6AreTheWordsLexicographicallyOrdered.i: string/tasks/6AreTheWordsLexicographicallyOrdered.c.i
+.PHONY : string/tasks/6AreTheWordsLexicographicallyOrdered.i
+
+# target to preprocess a source file
+string/tasks/6AreTheWordsLexicographicallyOrdered.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.i
+.PHONY : string/tasks/6AreTheWordsLexicographicallyOrdered.c.i
+
+string/tasks/6AreTheWordsLexicographicallyOrdered.s: string/tasks/6AreTheWordsLexicographicallyOrdered.c.s
+.PHONY : string/tasks/6AreTheWordsLexicographicallyOrdered.s
+
+# target to generate assembly for a file
+string/tasks/6AreTheWordsLexicographicallyOrdered.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/6AreTheWordsLexicographicallyOrdered.c.s
+.PHONY : string/tasks/6AreTheWordsLexicographicallyOrdered.c.s
+
+string/tasks/7theWordsOfTheStringAreInReverseOrder.obj: string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj
+.PHONY : string/tasks/7theWordsOfTheStringAreInReverseOrder.obj
+
+# target to build an object file
+string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj
+.PHONY : string/tasks/7theWordsOfTheStringAreInReverseOrder.c.obj
+
+string/tasks/7theWordsOfTheStringAreInReverseOrder.i: string/tasks/7theWordsOfTheStringAreInReverseOrder.c.i
+.PHONY : string/tasks/7theWordsOfTheStringAreInReverseOrder.i
+
+# target to preprocess a source file
+string/tasks/7theWordsOfTheStringAreInReverseOrder.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.i
+.PHONY : string/tasks/7theWordsOfTheStringAreInReverseOrder.c.i
+
+string/tasks/7theWordsOfTheStringAreInReverseOrder.s: string/tasks/7theWordsOfTheStringAreInReverseOrder.c.s
+.PHONY : string/tasks/7theWordsOfTheStringAreInReverseOrder.s
+
+# target to generate assembly for a file
+string/tasks/7theWordsOfTheStringAreInReverseOrder.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/7theWordsOfTheStringAreInReverseOrder.c.s
+.PHONY : string/tasks/7theWordsOfTheStringAreInReverseOrder.c.s
 
 string/tasks/_howManyDigitsAreThereSoManySpaces.obj: string/tasks/_howManyDigitsAreThereSoManySpaces.c.obj
 .PHONY : string/tasks/_howManyDigitsAreThereSoManySpaces.obj
@@ -369,6 +441,30 @@ string/tasks/removeNonLetters.c.s:
 	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/removeNonLetters.c.s
 .PHONY : string/tasks/removeNonLetters.c.s
 
+string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.obj: string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj
+.PHONY : string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.obj
+
+# target to build an object file
+string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj
+.PHONY : string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.obj
+
+string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.i: string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.i
+.PHONY : string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.i
+
+# target to preprocess a source file
+string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.i:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.i
+.PHONY : string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.i
+
+string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.s: string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.s
+.PHONY : string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.s
+
+# target to generate assembly for a file
+string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.s:
+	cd /d C:\Users\elen_\CLionProjects\course\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.s
+.PHONY : string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c.s
+
 unordered_array_set/unordered_array_set.obj: unordered_array_set/unordered_array_set.c.obj
 .PHONY : unordered_array_set/unordered_array_set.obj
 
@@ -414,9 +510,18 @@ help:
 	@echo ... ordered_array_set/ordered_array_set.obj
 	@echo ... ordered_array_set/ordered_array_set.i
 	@echo ... ordered_array_set/ordered_array_set.s
+	@echo ... sortAndDifficultyAssessment/sortAndDifficultyAssessment.obj
+	@echo ... sortAndDifficultyAssessment/sortAndDifficultyAssessment.i
+	@echo ... sortAndDifficultyAssessment/sortAndDifficultyAssessment.s
 	@echo ... string/string.obj
 	@echo ... string/string.i
 	@echo ... string/string.s
+	@echo ... string/tasks/6AreTheWordsLexicographicallyOrdered.obj
+	@echo ... string/tasks/6AreTheWordsLexicographicallyOrdered.i
+	@echo ... string/tasks/6AreTheWordsLexicographicallyOrdered.s
+	@echo ... string/tasks/7theWordsOfTheStringAreInReverseOrder.obj
+	@echo ... string/tasks/7theWordsOfTheStringAreInReverseOrder.i
+	@echo ... string/tasks/7theWordsOfTheStringAreInReverseOrder.s
 	@echo ... string/tasks/_howManyDigitsAreThereSoManySpaces.obj
 	@echo ... string/tasks/_howManyDigitsAreThereSoManySpaces.i
 	@echo ... string/tasks/_howManyDigitsAreThereSoManySpaces.s
@@ -432,6 +537,9 @@ help:
 	@echo ... string/tasks/removeNonLetters.obj
 	@echo ... string/tasks/removeNonLetters.i
 	@echo ... string/tasks/removeNonLetters.s
+	@echo ... string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.obj
+	@echo ... string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.i
+	@echo ... string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.s
 	@echo ... unordered_array_set/unordered_array_set.obj
 	@echo ... unordered_array_set/unordered_array_set.i
 	@echo ... unordered_array_set/unordered_array_set.s

@@ -186,6 +186,12 @@
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/ordered_array_set/ordered_array_set.h">
 			<Option target="course"/>
 		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.c">
 			<Option target="data_structures"/>
 		</Unit>
@@ -196,6 +202,18 @@
 			<Option target="data_structures"/>
 		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/6AreTheWordsLexicographicallyOrdered.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.h">
 			<Option target="data_structures"/>
 		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.c">
@@ -220,6 +238,12 @@
 			<Option target="data_structures"/>
 		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/removeNonLetters.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.h">
 			<Option target="data_structures"/>
 		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/course/libs/data_structures/unordered_array_set/unordered_array_set.c">

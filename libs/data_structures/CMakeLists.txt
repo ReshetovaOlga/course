@@ -10,6 +10,20 @@ add_library(data_structures
         string/tasks/removeNonLetters.c
         string/tasks/removeNonLetters.h
         string/tasks/removeAdjacentEqualLetters.c
-        string/tasks/removeAdjacentEqualLetters.h "string/tasks/firstTheNumbersAreInvertedThenTheLetters.c" "string/tasks/firstTheNumbersAreInvertedThenTheLetters.h" string/tasks/firstLettersThenNumbers.c string/tasks/firstLettersThenNumbers.h "string/tasks/ howManyDigitsAreThereSoManySpaces.c" "string/tasks/ howManyDigitsAreThereSoManySpaces.h")
+        string/tasks/removeAdjacentEqualLetters.h
+        "string/tasks/firstTheNumbersAreInvertedThenTheLetters.c"
+        "string/tasks/firstTheNumbersAreInvertedThenTheLetters.h"
+        string/tasks/firstLettersThenNumbers.c
+        string/tasks/firstLettersThenNumbers.h
+        "string/tasks/ howManyDigitsAreThereSoManySpaces.c"
+        "string/tasks/ howManyDigitsAreThereSoManySpaces.h"
+        string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.c
+        string/tasks/replaceAllOccurrencesOfTheWord1WithTheWord2.h
+        string/tasks/6AreTheWordsLexicographicallyOrdered.c
+        string/tasks/6AreTheWordsLexicographicallyOrdered.h
+        string/tasks/7theWordsOfTheStringAreInReverseOrder.c
+        string/tasks/7theWordsOfTheStringAreInReverseOrder.h
+        sortAndDifficultyAssessment/sortAndDifficultyAssessment.c
+        sortAndDifficultyAssessment/sortAndDifficultyAssessment.h)
 
 target_link_libraries(data_structures algorithms)

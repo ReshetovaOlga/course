@@ -4,8 +4,7 @@
 
 #include "firstTheNumbersAreInvertedThenTheLetters.h"
 
-
-
+/*
 int getWord(char *beginSearch, WordDescriptor *word) {
     word->begin = findNonSpace(beginSearch);
     if (*word->begin == '\0')
@@ -17,7 +16,7 @@ int getWord(char *beginSearch, WordDescriptor *word) {
 }
 
 void digitToStart(WordDescriptor word) {
-    char _stringBuffer[MAX_STRING_SIZE+1];
+    char _stringBuffer[MAX_STRING_SIZE + 1];
     char *endStringBuffer = copy(word.begin, word.end,
                                  _stringBuffer);
     char *recPosition = copyIfReverse(endStringBuffer - 1,
@@ -38,4 +37,4 @@ void firstTheNumbersAreInvertedThenTheLetters(char *beginString) {
         digitToStart(word);
         beginSearch = word.end;
     }
-}
+}*/

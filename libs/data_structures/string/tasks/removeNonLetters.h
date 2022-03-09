@@ -7,6 +7,6 @@
 #include "../../string/string.h"
 
 //удаляет из строки все пробельные символы строки s
-void removeNonLetters(char *s);
+//void removeNonLetters(char *s);
 
 #endif //COURSE_REMOVENONLETTERS_H

@@ -5,7 +5,7 @@
 #ifndef COURSE_REMOVEADJACENTEQUALLETTERS_H
 #define COURSE_REMOVEADJACENTEQUALLETTERS_H
 #include "../../string/string.h"
-
+/*
 
 char *copyIfElementsNitDabble(char *beginSource, const char *endSource, char *beginDestination);
 
@@ -13,5 +13,5 @@ char *copyIfElementsNitDabble(char *beginSource, const char *endSource, char *be
 // оставляя только один символ в каждой
 // последовательности подряд идущих одинаковых символо
 void removeAdjacentEqualLetters(char *s);
-
+*/
 #endif //COURSE_REMOVEADJACENTEQUALLETTERS_H

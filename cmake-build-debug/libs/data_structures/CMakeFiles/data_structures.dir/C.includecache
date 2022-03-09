@@ -12,21 +12,13 @@ stdio.h
 ctype.h
 -
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.c
- howManyDigitsAreThereSoManySpaces.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.c
+7theWordsOfTheStringAreInReverseOrder.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.h
 
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/ howManyDigitsAreThereSoManySpaces.h
+C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/7theWordsOfTheStringAreInReverseOrder.h
 ../../string/string.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/string.h
-malloc.h
--
-
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.c
-firstLettersThenNumbers.h
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.h
-
-C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstLettersThenNumbers.h
 ../../string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/string/tasks/firstTheNumbersAreInvertedThenTheLetters.h
 
