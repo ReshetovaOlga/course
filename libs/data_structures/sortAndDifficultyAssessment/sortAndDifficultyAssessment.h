@@ -30,6 +30,9 @@ void swap(int *a, int *b);
 void bubbleSort(int *a, size_t size);
 
 // сортирует выбором массив а размера size
-void selectionSort(int *a, const int size);
+void selectionSort(int *a, int size);
+
+// сортирует вставками массив а размера size
+void insertionSort(int *a, size_t size);
 
 #endif //COURSE_SORTANDDIFFICULTYASSESSMENT_H

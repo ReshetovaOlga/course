@@ -17,7 +17,7 @@ void bubbleSort(int *a, size_t size) {
                 swap(&a[j - 1], &a[j]);
 }
 
-void selectionSort(int *a, const int size) {
+void selectionSort(int *a, int size) {
     for (int i = 0; i < size - 1; i++) {
         int minPos = i;
         for (int j = i + 1; j < size; j++)
@@ -25,5 +25,17 @@ void selectionSort(int *a, const int size) {
                 minPos = j;
 
         swap(&a[i], &a[minPos]);
+    }
+}
+
+void insertionSort(int *a, size_t size) {
+    for (int i = 1; i < size; i++) {
+        int t = a[i];
+        int j = i;
+        while (j > 0 && a[j - 1] > t) {
+            a[j] = a[j - 1];
+            j--;
+        }
+        a[j] = t;
     }
 }
