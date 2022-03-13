@@ -35,4 +35,7 @@ void selectionSort(int *a, int size);
 // сортирует вставками массив а размера size
 void insertionSort(int *a, size_t size);
 
+// сортирует расческой массив а размера size
+void combSort(int *a, const size_t size);
+
 #endif //COURSE_SORTANDDIFFICULTYASSESSMENT_H
