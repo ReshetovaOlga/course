@@ -40,7 +40,7 @@ void insertionSort(int *a, size_t size) {
     }
 }
 
-void combSort(int *a, const size_t size) {
+void combSort(int *a, size_t size) {
     size_t step = size;
     int swapped = 1;
     while (step > 1 || swapped) {
@@ -52,5 +52,21 @@ void combSort(int *a, const size_t size) {
                 swap(&a[i], &a[j]);
                 swapped = 1;
             }
+    }
+}
+
+void sortShell(int *a, int size){
+    int range=size/2;
+    while (range>0){
+        for (int i = 1; i < size; i+=range) {
+            int t = a[i];
+            int j = i;
+            while (j > 0 && a[j - 1] > t) {
+                a[j] = a[j - 1];
+                j--;
+            }
+            a[j] = t;
+        }
+        range/=2;
     }
 }
