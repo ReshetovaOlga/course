@@ -6,9 +6,23 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/elen_/CLionProjects/course/libs/algorithms/array/array.h
+stdio.h
+-
+
 C:/Users/elen_/CLionProjects/course/libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c
 sortAndDifficultyAssessment.h
 C:/Users/elen_/CLionProjects/course/libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.h
+../../algorithms/array/array.h
+C:/Users/elen_/CLionProjects/course/libs/algorithms/array/array.h
+string.h
+-
+stdlib.h
+-
+time.h
+-
+limits.h
+-
 
 C:/Users/elen_/CLionProjects/course/libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.h
 stdlib.h

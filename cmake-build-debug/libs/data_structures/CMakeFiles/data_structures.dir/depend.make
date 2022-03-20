@@ -17,6 +17,7 @@ libs/data_structures/CMakeFiles/data_structures.dir/ordered_array_set/ordered_ar
  ../libs/data_structures/ordered_array_set/ordered_array_set.c \
  ../libs/data_structures/ordered_array_set/ordered_array_set.h
 libs/data_structures/CMakeFiles/data_structures.dir/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c.obj: \
+ ../libs/algorithms/array/array.h \
  ../libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.c \
  ../libs/data_structures/sortAndDifficultyAssessment/sortAndDifficultyAssessment.h
 libs/data_structures/CMakeFiles/data_structures.dir/string/string.c.obj: \
