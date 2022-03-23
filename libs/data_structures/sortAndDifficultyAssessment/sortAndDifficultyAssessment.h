@@ -31,6 +31,12 @@ typedef struct SortFunc {
     char name[64]; // имя сортировки, используемое при выводе
 } SortFunc;
 
+typedef struct SortFuncNSorts {
+    long long (*sort)(int *a, size_t n); // указатель на функцию сортировки
+    char name[64]; // имя сортировки, используемое при выводе
+}SortFuncNSorts;
+
+
 // функция генерации
 typedef struct GeneratingFunc {
     void (*generate)(int *a, size_t n); // указатель на функции генерации последоват.
@@ -54,7 +60,7 @@ void insertionSort(int *a, size_t size);
 void combSort(int *a, size_t size);
 
 // сортирует сортировкой Шелла массив а размера size
-void sortShell(int *a, size_t size);
+void shellSort(int *array, size_t size);
 
 // создает массив префиксных сумм
 void getPrefixSums(int *a, int n);
@@ -68,5 +74,18 @@ void generateOrderedArray(int *a, size_t n);
 
 void generateOrderedBackwards(int *a, size_t n);
 
+long long sortNCompSelectionSort(int *a, size_t size);
+
+long long sortNCompBubbleSort(int *a, size_t size);
+
+long long sortNCompInsertionSort(int *a, size_t size);
+
+long long sortNCompCombSort(int *a, size_t size);
+
+long long sortNCompShellSort(int *array, size_t size);
+
+void getPrefixSumsNComps(int *a, int n, long long *nComps);
+
+long long sortNCompDigitSort(int *a, size_t size);
 
 #endif //COURSE_SORTANDDIFFICULTYASSESSMENT_H

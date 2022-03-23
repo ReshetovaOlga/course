@@ -17,7 +17,6 @@ bool isOrdered(const int *a, size_t n) {
 }
 
 
-
 void swap(int *a, int *b) {
     int t = *a;
     *a = *b;
@@ -69,20 +68,15 @@ void combSort(int *a, size_t size) {
     }
 }
 
-
-void sortShell(int *a, size_t size) {
-    int range = size / 2;
-    while (range > 0) {
-        for (int i = 1; i < size; i += range) {
-            int t = a[i];
-            int j = i;
-            while (j > 0 && a[j - 1] > t) {
-                a[j] = a[j - 1];
-                j--;
+void shellSort(int *array, size_t size) {
+    for (int s = size / 2; s > 0; s /= 2) {
+        for (int i = s; i < size; ++i) {
+            for (int j = i - s; j >= 0 && array[j] > array[j + s]; j -= s) {
+                int temp = array[j];
+                array[j] = array[j + s];
+                array[j + s] = temp;
             }
-            a[j] = t;
         }
-        range /= 2;
     }
 }
 
@@ -97,25 +91,18 @@ void getPrefixSums(int *a, int n) {
 }
 
 void digitSort(int *a, size_t size) {
-    int buffer[size];
+    int *buffer = malloc(sizeof(int) * size);
 
     const int STEP = 8;
-    const int MASK = 0b11111111; // MASK = 255 = 2^8-1
-    for (int byte = 0; byte < sizeof(int); byte++) {//цикл размером 4 (так как в int 4 байта)
-        int values[UCHAR_MAX + 1] = {0};// создает массив размером 256,
-        // заполненый нулями; UCHAR_MAX = 255
-
+    const int MASK = 0b11111111;
+    for (int byte = 0; byte < sizeof(int); byte++) {
+        int values[UCHAR_MAX + 1] = {0};
 
         for (int i = 0; i < size; i++) {
-            int curByte; // текущий байт
-            if (byte + 1 == sizeof(int)) { // если последний (то-есть первый)
-                // байт чисел цикла (он у всех наступает одинаково,
-                // так как все числа интовые, их размер равен 4 байтам)
-                curByte = ((a[i] >> (byte * STEP)) + CHAR_MAX + 1) & MASK; //CHAR_MAX = 127
-                // (a[i] >> (byte * STEP)
-                //
-            }
-            else {
+            int curByte;
+            if (byte + 1 == sizeof(int)) {
+                curByte = ((a[i] >> (byte * STEP)) + CHAR_MAX + 1) & MASK;
+            } else {
                 curByte = (a[i] >> (byte * STEP)) & MASK;
             }
             values[curByte]++;
@@ -125,7 +112,7 @@ void digitSort(int *a, size_t size) {
         getPrefixSums(values, UCHAR_MAX + 1);
 
         for (size_t i = 0; i < size; i++) {
-            int curByte; // текущий байт
+            int curByte;
             if (byte + 1 == sizeof(int)) {
                 curByte = ((a[i] >> (byte * STEP)) + CHAR_MAX + 1) & MASK;
             } else {
@@ -137,22 +124,141 @@ void digitSort(int *a, size_t size) {
 
         memcpy(a, buffer, sizeof(int) * size);
     }
+    free(buffer);
 }
 
-void generateRandomArray(int *a, size_t n){
+
+void generateRandomArray(int *a, size_t n) {
     srand(time(0));
-     for (int i=0; i<n; i++)
-         a[i]=INT_MIN/2+rand();
+    for (int i = 0; i < n; i++)
+        a[i] = INT_MIN / 2 + rand();
 }
 
-void generateOrderedArray(int *a, size_t n){
-    for(int i=0;i<n; i++)
-        a[i]=i;
+void generateOrderedArray(int *a, size_t n) {
+    for (int i = 0; i < n; i++)
+        a[i] = i;
 }
 
-void generateOrderedBackwards(int *a, size_t n){
-    int value=n-1;
-    for(int i=0; i<n; i++)
-        a[i]=value--;
+void generateOrderedBackwards(int *a, size_t n) {
+    int value = n - 1;
+    for (int i = 0; i < n; i++)
+        a[i] = value--;
 
 }
+
+long long sortNCompBubbleSort(int *a, size_t size) {
+    long long nComps = 0;
+    for (size_t i = 0; ++nComps && i < size - 1; i++)
+        for (size_t j = size - 1; ++nComps && j > i; j--)
+            if (++nComps && a[j - 1] > a[j])
+                swap(&a[j - 1], &a[j]);
+    return nComps;
+}
+
+long long sortNCompSelectionSort(int *a, size_t size) {
+    long long nComps = 0;
+    for (int i = 0; ++nComps && i < size - 1; i++) {
+        int minPos = i;
+        for (int j = i + 1; ++nComps && j < size; j++)
+            if (++nComps && a[j] < a[minPos])
+                minPos = j;
+
+        swap(&a[i], &a[minPos]);
+    }
+
+    return nComps;
+}
+
+long long sortNCompInsertionSort(int *a, size_t size) {
+    long long nComps = 0;
+    for (int i = 1; ++nComps && i < size; i++) {
+        int t = a[i];
+        int j = i;
+        while (++nComps && j > 0 && a[j - 1] > t) {
+            a[j] = a[j - 1];
+            j--;
+        }
+        a[j] = t;
+    }
+    return nComps;
+}
+
+long long sortNCompCombSort(int *a, size_t size) {
+    long long nComps = 0;
+    size_t step = size;
+    int swapped = 1;
+    while (++nComps && (step > 1 || swapped)) {
+        if (++nComps && step > 1)
+            step /= 1.24733;
+        swapped = 0;
+        for (size_t i = 0, j = i + step; ++nComps && j < size; ++i, ++j)
+            if (++nComps && (a[i] > a[j])) {
+                swap(&a[i], &a[j]);
+                swapped = 1;
+            }
+    }
+    return nComps;
+}
+
+long long sortNCompShellSort(int *array, size_t size) {
+    long long nComps = 0;
+    for (int s = size / 2; ++nComps && s > 0; s /= 2) {
+        for (int i = s; ++nComps && i < size; ++i) {
+            for (int j = i - s; ++nComps && j >= 0 && array[j] > array[j + s]; j -= s) {
+                swap(&array[j], &array[j + s]);
+            }
+        }
+    }
+    return nComps;
+}
+
+void getPrefixSumsNComps(int *a, int n, long long *nComps) {
+    int prev = a[0];
+    *a = 0;
+    for (int i = 1; ++nComps && i < n; i++) {
+        int t = a[i];
+        a[i] = prev + a[i - 1];
+        prev = t;
+    }
+}
+
+long long sortNCompDigitSort(int *a, size_t size) {
+    int *buffer = malloc(sizeof(int) * size);
+
+    long long nComps = 0;
+    const int STEP = 8;
+    const int MASK = 0b11111111;
+    for (int byte = 0; ++nComps && byte < sizeof(int); byte++) {
+        int values[UCHAR_MAX + 1] = {0};
+
+        for (int i = 0; ++nComps && i < size; i++) {
+            int curByte;
+            if (++nComps && byte + 1 == sizeof(int))
+                curByte = ((a[i] >> (byte * STEP)) + CHAR_MAX + 1) & MASK;
+            else {
+                curByte = (a[i] >> (byte * STEP)) & MASK;
+            }
+            values[curByte]++;
+        }
+
+
+        getPrefixSumsNComps(values, UCHAR_MAX + 1, &nComps);
+
+        for (size_t i = 0; ++nComps && i < size; i++) {
+            int curByte;
+            if (++nComps && byte + 1 == sizeof(int)) {
+                curByte = ((a[i] >> (byte * STEP)) + CHAR_MAX + 1) & MASK;
+            } else {
+                curByte = (a[i] >> (byte * STEP)) & MASK;
+            }
+
+            buffer[values[curByte]++] = a[i];
+        }
+
+        memcpy(a, buffer, sizeof(int) * size);
+    }
+    free(buffer);
+
+    return nComps;
+}
+
