@@ -91,4 +91,8 @@ char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestina
 
 void reverseWord(WordDescriptor word);
 
+void getBagOfWords(BagOfWords *bag, char *s);
+
+void printWord(WordDescriptor word);
+
 #endif //COURSE_STRING_H

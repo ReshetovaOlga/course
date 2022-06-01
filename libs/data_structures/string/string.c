@@ -128,3 +128,23 @@ void reverseWord(WordDescriptor word) {
                                         _stringBuffer);
     copy(_stringBuffer, endStringBuffer, word.begin);
 }
+
+
+void getBagOfWords(BagOfWords *bag, char *s) {
+    bag->size = 0;
+
+    WordDescriptor word;
+    while (getWord(s, &word)) {
+        bag->words[bag->size++] = word;
+        s = word.end;
+    }
+}
+
+void printWord(WordDescriptor word) {
+    char *endStringBuffer = copy(word.begin, word.end, _stringBuffer);
+
+    *endStringBuffer = '\0';
+
+    printf("%s", _stringBuffer);
+}
+

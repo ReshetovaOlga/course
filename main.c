@@ -1,39 +1,17 @@
 #include <stdio.h>
-#include <assert.h>
-#include <malloc.h>
-#include <math.h>
-#include <limits.h>
-#include <stdlib.h>
 #include "libs/data_structures/string/string.h"
 
-// task3_1
-    void digitsToStartLettersToEnd(char *beginString) {
-        char *beginSearch = beginString;
-        WordDescriptor word;
+// task7
+void printWordsLineInReversedOrder(char *beginString) {
+    getBagOfWords(&_bag, beginString);
 
-        while (getWord(beginSearch, &word)) {
-            digitToStart(word);
-            beginSearch = word.end;
-        }
-
-    }
-
-// task3_2
-void reverseWords(char *beginString) {
-    char *beginSearch = beginString;
-    WordDescriptor word;
-
-    while (getWord(beginSearch, &word)) {
-        reverseWord(word);
-        beginSearch = word.end;
+    for (int i = _bag.size - 1; i >= 0; i--) {
+        printWord(_bag.words[i]);
+        printf("\n");
     }
 }
 
-
-
 int main() {
-
-
 
     return 0;
 }
