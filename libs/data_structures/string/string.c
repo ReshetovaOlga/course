@@ -181,8 +181,6 @@ int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wor
     return 0;
 }
 
-
-
 int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word) {
     word->end = findNonSpaceReverse(rBeginSearch, rEndSearch);
 
@@ -193,8 +191,20 @@ int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word) {
     word->end = word->end + 1;
 
     return 1;
-
 }
+
+int getSeparatedWord(char *beginSearch, WordDescriptor *word) {
+    char *endString = getEndOfString(beginSearch);
+    word->begin = findNonSpace(beginSearch);
+
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = find(word->begin, endString, ',');
+
+    return 1;
+}
+
 
 
 

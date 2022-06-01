@@ -103,4 +103,6 @@ int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wor
 
 int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word);
 
+int getSeparatedWord(char *beginSearch, WordDescriptor *word);
+
 #endif //COURSE_STRING_H
