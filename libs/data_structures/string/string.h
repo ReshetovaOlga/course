@@ -87,4 +87,8 @@ int getWord(char *beginSearch, WordDescriptor *word);
 
 void digitToStart(WordDescriptor word);
 
+char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestination);
+
+void reverseWord(WordDescriptor word);
+
 #endif //COURSE_STRING_H

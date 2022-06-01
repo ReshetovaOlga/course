@@ -18,14 +18,21 @@
 
     }
 
-void task3_2(){
+// task3_2
+void reverseWords(char *beginString) {
+    char *beginSearch = beginString;
+    WordDescriptor word;
 
+    while (getWord(beginSearch, &word)) {
+        reverseWord(word);
+        beginSearch = word.end;
+    }
 }
 
+
+
 int main() {
-    char s="4l5l";
-    digitsToStartLettersToEnd(&s);
-    printf("%s", s);
+
 
 
     return 0;
