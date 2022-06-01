@@ -1,15 +1,25 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include <limits.h>
 #include "libs/data_structures/string/string.h"
 
-// task7
-void printWordsLineInReversedOrder(char *beginString) {
-    getBagOfWords(&_bag, beginString);
-
-    for (int i = _bag.size - 1; i >= 0; i--) {
-        printWord(_bag.words[i]);
-        printf("\n");
+// task19
+bool areAllLettersInString(char *s, WordDescriptor word) {
+    bool availability[CHAR_MAX + 1] = {false};
+    char *end = getEndOfString(s);
+    while (s != end) {
+        availability[*s] = true;
+        s++;
     }
+
+    while (word.begin != word.end) {
+        if (!availability[*word.begin])
+            return false;
+        word.begin++;
+    }
+    return true;
 }
+
 
 int main() {
 
