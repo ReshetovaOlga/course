@@ -4,38 +4,29 @@
 #include <math.h>
 #include <limits.h>
 #include <stdlib.h>
+#include "libs/data_structures/string/string.h"
 
-typedef struct matrix {
-    int **values;// элементы матрицы
-    int nRows;// количество рядов
-    int nCols;// количество столбцов
-}matrix;
+// task3_1
+    void digitsToStartLettersToEnd(char *beginString) {
+        char *beginSearch = beginString;
+        WordDescriptor word;
 
-typedef struct position{
-    int rowIndex;
-    int colIndex;
-}position;
-
-position getMaxValuePos(matrix m) {
-    position posMaxElement = (position) {0, 0};
-
-    for (int i = 0; i < m.nRows; i++)
-        for (int j = 0; j < m.nCols; j++) {
-            if (m.values[i][j] > m.values[posMaxElement.rowIndex][posMaxElement.colIndex]) {
-                posMaxElement.rowIndex = i;
-                posMaxElement.colIndex = j;
-            }
+        while (getWord(beginSearch, &word)) {
+            digitToStart(word);
+            beginSearch = word.end;
         }
 
-    return posMaxElement;
-}
+    }
 
-void swapElement(matrix m) {
-    position maxPos = getMaxValuePos(m);
+void task3_2(){
 
 }
 
 int main() {
+    char s="4l5l";
+    digitsToStartLettersToEnd(&s);
+    printf("%s", s);
+
 
     return 0;
 }

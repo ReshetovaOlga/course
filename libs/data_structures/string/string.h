@@ -10,6 +10,20 @@
 # define MAX_N_WORDS_IN_STRING 100
 # define MAX_WORD_SIZE 20
 
+typedef struct WordDescriptor {
+    char *begin; // позиция начала слова
+    char *end; // позиция первого символа, после последнего символа слова
+} WordDescriptor;
+
+typedef struct BagOfWords {
+    WordDescriptor words[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} BagOfWords;
+static char _stringBuffer[MAX_STRING_SIZE + 1];
+static BagOfWords _bag;
+static BagOfWords _bag2;
+
+
 // определяет, сколько символов имеется
 // от начала строки до первого ноль-символа
 // с помощью указателя  begin
@@ -68,5 +82,9 @@ char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
 
 // находит конец строки
 char *getEndOfString(char *s);
+
+int getWord(char *beginSearch, WordDescriptor *word);
+
+void digitToStart(WordDescriptor word);
 
 #endif //COURSE_STRING_H
