@@ -3,22 +3,23 @@
 #include <limits.h>
 #include "libs/data_structures/string/string.h"
 
-// task19
-bool areAllLettersInString(char *s, WordDescriptor word) {
-    bool availability[CHAR_MAX + 1] = {false};
-    char *end = getEndOfString(s);
-    while (s != end) {
-        availability[*s] = true;
-        s++;
-    }
+// task6
+bool isItOrder(char *beginString) {
+    WordDescriptor lastWord;
+    if (!getWord(beginString, &lastWord))
+        return true;
 
-    while (word.begin != word.end) {
-        if (!availability[*word.begin])
+    beginString = lastWord.end;
+    WordDescriptor currentWord;
+    while (getWord(beginString, &currentWord)) {
+        if (areWordsEqual(lastWord, currentWord) > 0)
             return false;
-        word.begin++;
+        lastWord = currentWord;
+        beginString = lastWord.end;
     }
     return true;
 }
+
 
 
 int main() {
