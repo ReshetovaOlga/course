@@ -183,5 +183,19 @@ int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wor
 
 
 
+int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word) {
+    word->end = findNonSpaceReverse(rBeginSearch, rEndSearch);
+
+    if (word->end == rEndSearch)
+        return 0;
+
+    word->begin = findSpaceReverse(word->end, rEndSearch) + 1;
+    word->end = word->end + 1;
+
+    return 1;
+
+}
+
+
 
 

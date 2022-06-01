@@ -101,4 +101,6 @@ bool identicalWords(WordDescriptor w1, WordDescriptor w2);
 
 int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wordToFind);
 
+int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word);
+
 #endif //COURSE_STRING_H

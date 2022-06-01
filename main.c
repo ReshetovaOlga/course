@@ -3,19 +3,26 @@
 #include <limits.h>
 #include "libs/data_structures/string/string.h"
 
-// task 13
-bool areIdenticalWordsInString(char *s) {
-    getBagOfWords(&_bag, s);
-    WordDescriptor *bagEnd = _bag.words + _bag.size;
-    for (WordDescriptor *currentWord1 = _bag.words; currentWord1 < bagEnd; ++currentWord1) {
-        for (WordDescriptor *currentWord2 = currentWord1 + 1; currentWord2 < bagEnd; ++currentWord2) {
-            if (identicalWords(*currentWord1, *currentWord2))
-                return true;
+// task 15
+void stringWithoutLastWord(char *sRes, char *sOriginal) {
+    WordDescriptor lastWord;
+    rGetWord(getEndOfString(sOriginal) - 1, sOriginal - 1, &lastWord);
+
+    WordDescriptor currentWord;
+    while (getWord(sOriginal, &currentWord)) {
+        if (!identicalWords(lastWord, currentWord)) {
+            sRes = copy(currentWord.begin, currentWord.end, sRes);
+            *sRes = ' ';
+            sRes++;
         }
+        sOriginal = currentWord.end;
     }
 
-    return false;
+    sRes--;
+    *sRes = '\0';
 }
+
+
 
 
 
