@@ -97,4 +97,8 @@ void printWord(WordDescriptor word);
 
 int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
 
+bool identicalWords(WordDescriptor w1, WordDescriptor w2);
+
+int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wordToFind);
+
 #endif //COURSE_STRING_H

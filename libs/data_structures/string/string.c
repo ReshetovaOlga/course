@@ -5,6 +5,7 @@
 #include "string.h"
 #include <assert.h>
 #include <memory.h>
+#include <stdbool.h>
 
 size_t strlen_(char *begin) {
     char *end = begin;
@@ -156,5 +157,31 @@ int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
 
     return *w1.begin - *w2.begin;
 }
+
+bool identicalWords(WordDescriptor w1, WordDescriptor w2) {
+    if (w1.end - w1.begin != w2.end - w2.begin)
+        return 0;
+    while (w1.begin != w1.end) {
+        if (*w1.begin != *w2.begin)
+            return 0;
+        w1.begin++;
+        w2.begin++;
+    }
+    return 1;
+}
+
+int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wordToFind) {
+    while (getWord(beginSearch, word)) {
+        if (identicalWords(*word, wordToFind)) {
+            return 1;
+        } else {
+            beginSearch = word->end;
+        }
+    }
+    return 0;
+}
+
+
+
 
 
