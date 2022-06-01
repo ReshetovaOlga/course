@@ -3,24 +3,28 @@
 #include <limits.h>
 #include "libs/data_structures/string/string.h"
 
-// task 15
-void stringWithoutLastWord(char *sRes, char *sOriginal) {
-    WordDescriptor lastWord;
-    rGetWord(getEndOfString(sOriginal) - 1, sOriginal - 1, &lastWord);
+// task 10
+void reverseString(char *beginString) {
+    if (*beginString == '\0')
+        return;
 
-    WordDescriptor currentWord;
-    while (getWord(sOriginal, &currentWord)) {
-        if (!identicalWords(lastWord, currentWord)) {
-            sRes = copy(currentWord.begin, currentWord.end, sRes);
-            *sRes = ' ';
-            sRes++;
-        }
-        sOriginal = currentWord.end;
+    char *endStringBuffer = copy(beginString, getEndOfString(beginString), _stringBuffer);
+    *endStringBuffer = '\0';
+
+    WordDescriptor word;
+    while (rGetWord(endStringBuffer - 1, _stringBuffer - 1, &word)) {
+        beginString = copy(word.begin, word.end, beginString);
+
+        *beginString = ' ';
+        beginString++;
+
+        endStringBuffer = word.begin;
     }
 
-    sRes--;
-    *sRes = '\0';
+    beginString--;
+    *beginString = '\0';
 }
+
 
 
 
