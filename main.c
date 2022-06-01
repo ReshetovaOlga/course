@@ -3,21 +3,14 @@
 #include <limits.h>
 #include "libs/data_structures/string/string.h"
 
-// task6
-bool isItOrder(char *beginString) {
-    WordDescriptor lastWord;
-    if (!getWord(beginString, &lastWord))
-        return true;
+// task7
+void wordsOnePerLineInReversedOrder(char *beginString) {
+    getBagOfWords(&_bag, beginString);
 
-    beginString = lastWord.end;
-    WordDescriptor currentWord;
-    while (getWord(beginString, &currentWord)) {
-        if (areWordsEqual(lastWord, currentWord) > 0)
-            return false;
-        lastWord = currentWord;
-        beginString = lastWord.end;
+    for (int i = _bag.size - 1; i >= 0; i--) {
+        printWord(_bag.words[i]);
+        printf("\n");
     }
-    return true;
 }
 
 
